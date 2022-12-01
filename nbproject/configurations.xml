@@ -8,6 +8,8 @@
       <itemPath>adc/adc.h</itemPath>
       <itemPath>uart/uart.h</itemPath>
       <itemPath>timer/timer.h</itemPath>
+      <itemPath>lcd/lcd.h</itemPath>
+      <itemPath>interrupt/interrupt.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -20,6 +22,8 @@
       <itemPath>adc/adc.c</itemPath>
       <itemPath>uart/uart.c</itemPath>
       <itemPath>timer/timer.c</itemPath>
+      <itemPath>lcd/lcd.c</itemPath>
+      <itemPath>interrupt/interrupt.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -102,6 +106,15 @@
         <property key="hex-output-format" value="INHX32"/>
         <property key="map-file" value="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"/>
       </C18-LD>
+      <C18LanguageToolchain>
+        <property key="extended-mode" value="false"/>
+        <property key="extended-mode-mcc18" value="false"/>
+        <property key="extended-mode-mpasm" value="false"/>
+        <property key="extended-mode-mplink" value="false"/>
+        <property key="stack-analysis" value="false"/>
+        <property key="stack-analysis-mcc18" value="false"/>
+        <property key="stack-analysis-mplink" value="false"/>
+      </C18LanguageToolchain>
       <Simulator>
         <property key="codecoverage.enabled" value="Disable"/>
         <property key="codecoverage.enableoutputtofile" value="false"/>

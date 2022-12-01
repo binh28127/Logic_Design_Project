@@ -25,3 +25,40 @@ void init_uart()
 	TRISCbits.RC6 = 0;  // RC6 output
 	TRISCbits.RC7 = 1;  // RC7 input
 }
+
+void uart_delay_ms(int value)
+{
+	int i,j;
+	for(i=0;i<value;i++)
+		for(j=0;j<238;j++);
+}
+
+void uart_putchar(unsigned char data)
+{
+	while(PIR1bits.TXIF == 0);
+        TXREG = data;
+	PIR1bits.TXIF = 0;
+}
+
+void uart_send_str(const char *str)
+{
+	while(*str)
+	{
+		uart_putchar(*str);
+		*str++;
+	}
+}
+
+void UartSendString(const rom char *str)
+{
+	while(*str)
+	{
+		uart_putchar(*str);
+		*str++;
+	}
+}
+
+void uart_isr()
+{
+    // FSM??
+}

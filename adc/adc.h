@@ -7,7 +7,6 @@
 
 void init_adc(void);
 int get_adc_value(unsigned char channel);
-extern unsigned int adc_value[ADC_CHANNEL];
 
 #endif	/* ADC_H */
 

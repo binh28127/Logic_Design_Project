@@ -1,5 +1,5 @@
 #include "adc.h"
-unsigned int adc_value[ADC_CHANNEL];
+
 void init_adc(void)
 {
 	TRISA = 0x0f;
