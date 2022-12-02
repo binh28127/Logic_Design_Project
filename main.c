@@ -28,6 +28,7 @@ void init_system(void)
     lcd_clearS();
     delay_ms(500);
     init_interrupt();
+    init_adc();
     init_timer3(46950); //dinh thoi 10ms
 	SetTimer3_ms(50);   //Chu ky thuc hien viec xu ly input,proccess,output
 }
@@ -42,6 +43,7 @@ void delay_ms(int value)
 
 void get_adc(void)
 {
-    unsigned int adcValue = get_adc_value(0);
+    unsigned int adcValue;
+    adcValue = get_adc_value(0);
     lcd_print_numS(0, 0, adcValue);
 }
