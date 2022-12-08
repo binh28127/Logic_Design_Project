@@ -43,7 +43,19 @@ void delay_ms(int value)
 
 void get_adc(void)
 {
-    unsigned int adcValue;
-    adcValue = get_adc_value(0);
-    lcd_print_numS(0, 0, adcValue);
+    unsigned int adcValue[6];
+    int i;
+    
+    for (i = 0; i < 6; i++) {
+        adcValue[i] = get_adc_value(i);
+        delay_ms(10);
+    }
+    
+    lcd_print_numS(0, 0, adcValue[0]);
+    lcd_print_numS(0, 6, adcValue[1]);
+    lcd_print_numS(0, 12, adcValue[2]);
+    lcd_print_numS(1, 0, adcValue[3]);
+    lcd_print_numS(1, 6, adcValue[4]);
+    lcd_print_numS(1, 12, adcValue[5]);
+    
 }
