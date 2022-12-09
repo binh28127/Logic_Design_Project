@@ -49,13 +49,60 @@ void uart_send_str(const char *str)
 	}
 }
 
-void UartSendString(const rom char *str)
+void uart_send_string(const rom char *str)
 {
 	while(*str)
 	{
 		uart_putchar(*str);
 		*str++;
 	}
+}
+
+unsigned long uart_power_of(int a, int x) {
+    char i;
+    unsigned long temp = 1;
+    for(i = 0; i < x; i++)
+            temp *= a;
+    return temp;
+}
+
+void uart_send_num(long num)
+{
+    char num_flag = 0;
+    char i;
+
+    if(num == 0) 
+    {
+        uart_putchar('0');
+        return;
+    }
+    if(num < 0) 
+    {
+        uart_putchar('-');
+        num *= -1;
+    }
+
+    for(i = 10; i > 0; i--) 
+    {
+        if((num / uart_power_of(10, i - 1)) != 0) 
+        {
+            num_flag = 1;
+            uart_putchar(num/uart_power_of(10, i - 1) + '0');
+        }
+        else 
+        {
+            if(num_flag != 0)
+                uart_putchar('0');
+        }
+        num %= uart_power_of(10, i - 1);
+    }
+}
+
+void uart_send_num_percent(long num)
+{
+    uart_send_num(num / 100);
+    uart_putchar('.');
+    uart_send_num(num % 100);
 }
 
 void uart_isr()
