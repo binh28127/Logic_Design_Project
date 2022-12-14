@@ -62,40 +62,41 @@ void get_adc(void)
 {
     int i;
     
-    for (i = 0; i < 2; i++) {
+    for (i = 0; i < 6; i++) {
         adcValue[i] = get_adc_value(i);
         delay_ms(20);
     }
     
     lcd_print_numS(0, 0, adcValue[0]);
     lcd_print_numS(0, 6, adcValue[1]);
-//    lcd_print_numS(0, 12, adcValue[2]);
-//    lcd_print_numS(1, 0, adcValue[3]);
-//    lcd_print_numS(1, 6, adcValue[4]);
-//    lcd_print_numS(1, 12, adcValue[5]);
+    lcd_print_numS(0, 12, adcValue[2]);
+    lcd_print_numS(1, 0, adcValue[3]);
+    lcd_print_numS(1, 6, adcValue[4]);
+    lcd_print_numS(1, 12, adcValue[5]);
     
 }
 
 void get_sensor(void)
 {
-//    pH_value = adcValue[0];
-//    SS_value = adcValue[1];
-//    COD_value = adcValue[2];
-//    NH4_value = adcValue[3];
-//    NO3_value = adcValue[4];
-//    FLOW_value = adcValue[5];
-        pH_value = 443;
-        SS_value = adcValue[1];
-        COD_value = 3075;
-        NH4_value = 27;
-        NO3_value = 12;
-        TMP_value = adcValue[0];
-        FLOW_value = 5120;
+    pH_value = (6.9 + (long)adcValue[0] * (7.8 - 6.9) / 1023) * 100;
+    SS_value = (28.0 + (long)adcValue[1] * (45.0 - 28.0) / 1023) * 100;
+    COD_value = (90.0 + (long)adcValue[2] * (180.0 - 90.0) / 1023) * 100;
+    NH4_value = (2.1 + (long)adcValue[3] * (5.4 - 2.1) / 1023) * 100;
+    NO3_value = (1.5 + (long)adcValue[4] * (5.5 - 1.5) / 86) * 100;
+    FLOW_value = (160.0 + (long)adcValue[5] * (250.0 - 160.0) / 1023) * 100;
+    TMP_value = 2500;
+//        pH_value = 443;
+//        SS_value = adcValue[1];
+//        COD_value = 3075;
+//        NH4_value = 27;
+//        NO3_value = 12;
+//        TMP_value = adcValue[0];
+//        FLOW_value = 5120;
 }
 
 void send_software(void)
 {
-    simulateCnt = (simulateCnt + 1) % 40;
+    simulateCnt = (simulateCnt + 1) % 4;
     if (simulateCnt) return;
     
     uart_send_string("20.04.16 09:12:07  pH=  ");
