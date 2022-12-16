@@ -1,14 +1,14 @@
 #include "main.h"
 
-unsigned int adcValue[6];
+unsigned int adcValue[7];
 
 unsigned int pH_value;
 unsigned int SS_value;
 unsigned int COD_value;
+unsigned int TMP_value;
 unsigned int NH4_value;
 unsigned int NO3_value;
 unsigned int FLOW_value;
-unsigned int TMP_value;
 
 unsigned int simulateCnt;
 
@@ -39,7 +39,7 @@ void main(void)
 void init_system(void) 
 {
     TRISB = 0x00;		//setup PORTB is output
-    lcd_init();
+    init_lcd();
     lcd_clear();
     lcd_clearS();
     delay_ms(500);
@@ -62,17 +62,18 @@ void get_adc(void)
 {
     int i;
     
-    for (i = 0; i < 6; i++) {
+    for (i = 0; i < 7; i++) {
         adcValue[i] = get_adc_value(i);
         delay_ms(20);
     }
     
-    lcd_print_numS(0, 0, adcValue[0]);
-    lcd_print_numS(0, 6, adcValue[1]);
+    lcd_print_numS(0, 4, adcValue[0]);
+    lcd_print_numS(0, 8, adcValue[1]);
     lcd_print_numS(0, 12, adcValue[2]);
     lcd_print_numS(1, 0, adcValue[3]);
-    lcd_print_numS(1, 6, adcValue[4]);
-    lcd_print_numS(1, 12, adcValue[5]);
+    lcd_print_numS(1, 4, adcValue[4]);
+    lcd_print_numS(1, 8, adcValue[5]);
+    lcd_print_numS(1, 12, adcValue[6]);
     
 }
 
@@ -81,17 +82,10 @@ void get_sensor(void)
     pH_value = (6.9 + (long)adcValue[0] * (7.8 - 6.9) / 1023) * 100;
     SS_value = (28.0 + (long)adcValue[1] * (45.0 - 28.0) / 1023) * 100;
     COD_value = (90.0 + (long)adcValue[2] * (180.0 - 90.0) / 1023) * 100;
-    NH4_value = (2.1 + (long)adcValue[3] * (5.4 - 2.1) / 1023) * 100;
-    NO3_value = (1.5 + (long)adcValue[4] * (5.5 - 1.5) / 86) * 100;
-    FLOW_value = (160.0 + (long)adcValue[5] * (250.0 - 160.0) / 1023) * 100;
-    TMP_value = 2500;
-//        pH_value = 443;
-//        SS_value = adcValue[1];
-//        COD_value = 3075;
-//        NH4_value = 27;
-//        NO3_value = 12;
-//        TMP_value = adcValue[0];
-//        FLOW_value = 5120;
+    TMP_value = (25.0 + (long)adcValue[3] * (33.0 - 25.0) / 1023) * 100;
+    NH4_value = (2.1 + (long)adcValue[4] * (5.4 - 2.1) / 86) * 100;
+    NO3_value = (1.5 + (long)adcValue[5] * (5.5 - 1.5) / 1023) * 100;
+    FLOW_value = (160.0 + (long)adcValue[6] * (250.0 - 160.0) / 1023) * 100;
 }
 
 void send_software(void)

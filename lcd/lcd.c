@@ -14,7 +14,7 @@ void v_timer0(unsigned long time)
             for(j = 0; j < 238; j++);
 }
 
-void lcd_init(void)
+void init_lcd(void)
 {
 	unsigned char cmd;
     v_timer0(25);//Wait more than 15ms after Vcc = 4.5V

@@ -1,5 +1,5 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Wed Dec 14 15:10:29 2022
+Linker Map File - Created Sat Dec 17 01:55:43 2022
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -10,45 +10,45 @@ Linker Map File - Created Wed Dec 14 15:10:29 2022
      .idata_interrupt.o_i    romdata   0x00000e    program   0x000004
        InterruptVectorLow       code   0x000018    program   0x000006
                    .cinit    romdata   0x00001e    program   0x000026
-             .code_main.o       code   0x000044    program   0x00093e
-              .code_lcd.o       code   0x000982    program   0x000590
-                     PROG       code   0x000f12    program   0x00055c
-             .code_uart.o       code   0x00146e    program   0x000540
-            .code_timer.o       code   0x0019ae    program   0x000264
-        .code_interrupt.o       code   0x001c12    program   0x00015a
-               _cinit_scn       code   0x001d6c    program   0x00009e
-              .code_adc.o       code   0x001e0a    program   0x00008c
-          .code_fxm3232.o       code   0x001e96    program   0x000070
-             .stringtable    romdata   0x001f06    program   0x00006b
-        .romdata___init.o    romdata   0x001f71    program   0x000000
-        .idata___init.o_i    romdata   0x001f71    program   0x000000
-           .romdata_lcd.o    romdata   0x001f71    program   0x000000
-     .romdata_interrupt.o    romdata   0x001f71    program   0x000000
-       .romdata_fxm3232.o    romdata   0x001f71    program   0x000000
-       .idata_fxm3232.o_i    romdata   0x001f71    program   0x000000
-      .idata_fxd1616u.o_i    romdata   0x001f71    program   0x000000
-      .romdata_fxd1616u.o    romdata   0x001f71    program   0x000000
-      .idata_fxd2424u.o_i    romdata   0x001f71    program   0x000000
-      .romdata_fxd2424u.o    romdata   0x001f71    program   0x000000
-      .idata_fxd3232u.o_i    romdata   0x001f71    program   0x000000
-      .romdata_fxd3232u.o    romdata   0x001f71    program   0x000000
-         .idata_c018i.o_i    romdata   0x001f71    program   0x000000
-         .romdata_c018i.o    romdata   0x001f71    program   0x000000
-          .idata_main.o_i    romdata   0x001f71    program   0x000000
-          .romdata_main.o    romdata   0x001f71    program   0x000000
-           .idata_adc.o_i    romdata   0x001f71    program   0x000000
-         .romdata_timer.o    romdata   0x001f71    program   0x000000
-          .romdata_uart.o    romdata   0x001f71    program   0x000000
-           .romdata_adc.o    romdata   0x001f71    program   0x000000
-          .idata_uart.o_i    romdata   0x001f71    program   0x000000
-            .code_c018i.o       code   0x001f72    program   0x000000
-         .code_fxd3232u.o       code   0x001f72    program   0x000048
-         .code_fxd2424u.o       code   0x001fba    program   0x00003a
-         .code_fxd1616u.o       code   0x001ff4    program   0x00002c
-                    .code       code   0x002020    program   0x000020
-             _startup_scn       code   0x002040    program   0x00001c
-         .idata_timer.o_i    romdata   0x00205c    program   0x000020
-           .idata_lcd.o_i    romdata   0x00207c    program   0x000020
+             .code_main.o       code   0x000044    program   0x000a34
+              .code_lcd.o       code   0x000a78    program   0x000852
+                     PROG       code   0x0012ca    program   0x00055c
+             .code_uart.o       code   0x001826    program   0x000540
+            .code_timer.o       code   0x001d66    program   0x000264
+        .code_interrupt.o       code   0x001fca    program   0x00015a
+               _cinit_scn       code   0x002124    program   0x00009e
+              .code_adc.o       code   0x0021c2    program   0x00008c
+          .code_fxm3232.o       code   0x00224e    program   0x000070
+             .stringtable    romdata   0x0022be    program   0x00006b
+        .romdata___init.o    romdata   0x002329    program   0x000000
+        .idata___init.o_i    romdata   0x002329    program   0x000000
+           .romdata_lcd.o    romdata   0x002329    program   0x000000
+     .romdata_interrupt.o    romdata   0x002329    program   0x000000
+       .romdata_fxm3232.o    romdata   0x002329    program   0x000000
+       .idata_fxm3232.o_i    romdata   0x002329    program   0x000000
+      .idata_fxd1616u.o_i    romdata   0x002329    program   0x000000
+      .romdata_fxd1616u.o    romdata   0x002329    program   0x000000
+      .idata_fxd2424u.o_i    romdata   0x002329    program   0x000000
+      .romdata_fxd2424u.o    romdata   0x002329    program   0x000000
+      .idata_fxd3232u.o_i    romdata   0x002329    program   0x000000
+      .romdata_fxd3232u.o    romdata   0x002329    program   0x000000
+         .idata_c018i.o_i    romdata   0x002329    program   0x000000
+         .romdata_c018i.o    romdata   0x002329    program   0x000000
+          .idata_main.o_i    romdata   0x002329    program   0x000000
+          .romdata_main.o    romdata   0x002329    program   0x000000
+           .idata_adc.o_i    romdata   0x002329    program   0x000000
+         .romdata_timer.o    romdata   0x002329    program   0x000000
+          .romdata_uart.o    romdata   0x002329    program   0x000000
+           .romdata_adc.o    romdata   0x002329    program   0x000000
+          .idata_uart.o_i    romdata   0x002329    program   0x000000
+            .code_c018i.o       code   0x00232a    program   0x000000
+         .code_fxd3232u.o       code   0x00232a    program   0x000048
+         .code_fxd2424u.o       code   0x002372    program   0x00003a
+         .code_fxd1616u.o       code   0x0023ac    program   0x00002c
+                    .code       code   0x0023d8    program   0x000020
+             _startup_scn       code   0x0023f8    program   0x00001c
+         .idata_timer.o_i    romdata   0x002414    program   0x000020
+           .idata_lcd.o_i    romdata   0x002434    program   0x000020
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300002_main.o    romdata   0x300002    program   0x000001
     .config_300003_main.o    romdata   0x300003    program   0x000001
@@ -64,28 +64,28 @@ Linker Map File - Created Wed Dec 14 15:10:29 2022
                 MATH_DATA      udata   0x000018       data   0x000014
            .idata_timer.o      idata   0x000080       data   0x000020
              .idata_lcd.o      idata   0x0000a0       data   0x000020
-            .udata_main.o      udata   0x0000c0       data   0x00001c
-           .udata_c018i.o      udata   0x0000dc       data   0x00000a
-             .udata_lcd.o      udata   0x0000e6       data   0x000004
-       .idata_interrupt.o      idata   0x0000ea       data   0x000004
-            .udata_uart.o      udata   0x0000ee       data   0x000001
-        .idata_fxd1616u.o      idata   0x0000ef       data   0x000000
-        .udata_fxd2424u.o      udata   0x0000ef       data   0x000000
-        .idata_fxd2424u.o      idata   0x0000ef       data   0x000000
-        .udata_fxd3232u.o      udata   0x0000ef       data   0x000000
-        .idata_fxd3232u.o      idata   0x0000ef       data   0x000000
-         .udata_fxm3232.o      udata   0x0000ef       data   0x000000
-         .idata_fxm3232.o      idata   0x0000ef       data   0x000000
-          .udata___init.o      udata   0x0000ef       data   0x000000
-          .idata___init.o      idata   0x0000ef       data   0x000000
-        .udata_fxd1616u.o      udata   0x0000ef       data   0x000000
-       .udata_interrupt.o      udata   0x0000ef       data   0x000000
-           .udata_timer.o      udata   0x0000ef       data   0x000000
-            .idata_uart.o      idata   0x0000ef       data   0x000000
-             .idata_adc.o      idata   0x0000ef       data   0x000000
-             .udata_adc.o      udata   0x0000ef       data   0x000000
-            .idata_main.o      idata   0x0000ef       data   0x000000
-           .idata_c018i.o      idata   0x0000ef       data   0x000000
+            .udata_main.o      udata   0x0000c0       data   0x00001e
+           .udata_c018i.o      udata   0x0000de       data   0x00000a
+             .udata_lcd.o      udata   0x0000e8       data   0x000004
+       .idata_interrupt.o      idata   0x0000ec       data   0x000004
+            .udata_uart.o      udata   0x0000f0       data   0x000001
+        .idata_fxd1616u.o      idata   0x0000f1       data   0x000000
+        .udata_fxd2424u.o      udata   0x0000f1       data   0x000000
+        .idata_fxd2424u.o      idata   0x0000f1       data   0x000000
+        .udata_fxd3232u.o      udata   0x0000f1       data   0x000000
+        .idata_fxd3232u.o      idata   0x0000f1       data   0x000000
+         .udata_fxm3232.o      udata   0x0000f1       data   0x000000
+         .idata_fxm3232.o      idata   0x0000f1       data   0x000000
+          .udata___init.o      udata   0x0000f1       data   0x000000
+          .idata___init.o      idata   0x0000f1       data   0x000000
+        .udata_fxd1616u.o      udata   0x0000f1       data   0x000000
+       .udata_interrupt.o      udata   0x0000f1       data   0x000000
+           .udata_timer.o      udata   0x0000f1       data   0x000000
+            .idata_uart.o      idata   0x0000f1       data   0x000000
+             .idata_adc.o      idata   0x0000f1       data   0x000000
+             .udata_adc.o      udata   0x0000f1       data   0x000000
+            .idata_main.o      idata   0x0000f1       data   0x000000
+           .idata_c018i.o      idata   0x0000f1       data   0x000000
                    .stack      udata   0x000e00       data   0x000100
             SFR_UNBANKED0      udata   0x000f80       data   0x000080
 
@@ -95,71 +95,71 @@ Linker Map File - Created Wed Dec 14 15:10:29 2022
                                Start         End      
                            ---------   ---------      
                             0x000000    0x000011      
-                            0x000018    0x001f70      
-                            0x001f72    0x00209b      
+                            0x000018    0x002328      
+                            0x00232a    0x002453      
                             0x300001    0x300003      
                             0x300005    0x300006      
                             0x300008    0x30000d      
-            8352 out of 66584 program addresses used, program memory utilization is 12%
+            9304 out of 66584 program addresses used, program memory utilization is 13%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                   D1616S   0x001218    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x001226    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x001222    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x001238    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                   D2424S   0x00126c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                D2424SNEG   0x00127a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                 D2424SOK   0x001276    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  D2424SX   0x001292    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                   D3232S   0x0012cc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                D3232SNEG   0x0012da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                 D3232SOK   0x0012d6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                  D3232SX   0x0012fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                  DA1616S   0x001208    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  DA2424S   0x001258    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  DA3232S   0x0012b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                 FLO3232S   0x000f16    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast32FP.asm
-                 FLO3232U   0x000f12    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast32FP.asm
-                    FPA32   0x000f4a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                    FPD32   0x001076    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                    FPM32   0x00111c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-                    FPS32   0x000f48    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 FXD1616S   0x0011f6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 FXD1616U   0x001ff4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                 FXD2424S   0x001242    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                 FXD2424U   0x001fba    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
-                 FXD3232S   0x00129c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                 FXD3232U   0x001f72    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                  FXM3232   0x001e96    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
-                  INT3216   0x001304    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                   D1616S   0x0015d0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x0015de    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x0015da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x0015f0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                   D2424S   0x001624    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                D2424SNEG   0x001632    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 D2424SOK   0x00162e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  D2424SX   0x00164a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                   D3232S   0x001684    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                D3232SNEG   0x001692    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                 D3232SOK   0x00168e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                  D3232SX   0x0016b2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                  DA1616S   0x0015c0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA2424S   0x001610    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  DA3232S   0x00166e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                 FLO3232S   0x0012ce    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast32FP.asm
+                 FLO3232U   0x0012ca    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast32FP.asm
+                    FPA32   0x001302    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    FPD32   0x00142e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    FPM32   0x0014d4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                    FPS32   0x001300    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 FXD1616S   0x0015ae    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 FXD1616U   0x0023ac    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                 FXD2424S   0x0015fa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 FXD2424U   0x002372    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
+                 FXD3232S   0x001654    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                 FXD3232U   0x00232a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                  FXM3232   0x00224e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+                  INT3216   0x0016bc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
       InterruptVectorHigh   0x000008    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
        InterruptVectorLow   0x000018    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-             SetTimer0_ms   0x001aea    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-             SetTimer1_ms   0x001b02    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-             SetTimer3_ms   0x001b34    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                 __FpExit   0x00136e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                 __FpPack   0x00139a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-            __FpReturnNaN   0x001362    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-         __FpReturnNegInf   0x001374    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnNegZero   0x00138c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-         __FpReturnPosInf   0x00137a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnPosZero   0x001394    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnSignInf   0x001370    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-       __FpReturnSignZero   0x001388    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-              __FpReturnW   0x0013f2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-              __FpUnPackA   0x001412    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-              __FpUnPackB   0x001442    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-       ___return_lbl00000   0x00201e    program     static                          
-       ___return_lbl00000   0x001f04    program     static                          
-       ___return_lbl00000   0x001fb8    program     static                          
+             SetTimer0_ms   0x001ea2    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+             SetTimer1_ms   0x001eba    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+             SetTimer3_ms   0x001eec    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                 __FpExit   0x001726    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                 __FpPack   0x001752    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+            __FpReturnNaN   0x00171a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnNegInf   0x00172c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnNegZero   0x001744    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnPosInf   0x001732    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnPosZero   0x00174c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnSignInf   0x001728    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+       __FpReturnSignZero   0x001740    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpReturnW   0x0017aa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpUnPackA   0x0017ca    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+              __FpUnPackB   0x0017fa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+       ___return_lbl00000   0x0023d6    program     static                          
+       ___return_lbl00000   0x0022bc    program     static                          
+       ___return_lbl00000   0x002370    program     static                          
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00000   0x001ff2    program     static                          
-       ___return_lbl00001   0x00205a    program     static                          
-       ___return_lbl00002   0x001e08    program     static                          
+       ___return_lbl00000   0x0023aa    program     static                          
+       ___return_lbl00001   0x002412    program     static                          
+       ___return_lbl00002   0x0021c0    program     static                          
        ___return_lbl00002   0x00001c    program     static                          
        ___return_lbl00003   0x00000c    program     static                          
                __config_0   0x300001    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
@@ -174,175 +174,149 @@ Linker Map File - Created Wed Dec 14 15:10:29 2022
                __config_8   0x30000b    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
                __config_9   0x30000c    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
                    __init   0x000006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-                   __pa_0   0x000d90    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_0   0x001cf2    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-                   __pa_0   0x001b66    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_1   0x000d9e    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_1   0x001d1c    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-                   __pa_1   0x001b92    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                  __pa_10   0x000e40    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_10   0x001c04    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                  __pa_11   0x000e52    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_12   0x000e64    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_13   0x000e72    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_14   0x000e80    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_15   0x000e8e    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_16   0x000e9a    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_17   0x000ea4    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_18   0x000eac    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_19   0x000eb8    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_2   0x000da8    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_2   0x001b9c    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_2   0x001d42    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-                  __pa_20   0x000ec2    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_21   0x000ecc    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_22   0x000ede    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_23   0x000ef0    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_24   0x000efc    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_25   0x000f08    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_3   0x001d50    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-                   __pa_3   0x001ba4    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_3   0x000db0    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_4   0x000dbe    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_4   0x001bac    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_4   0x001d5e    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-                   __pa_5   0x000ddc    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_5   0x001bbc    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_6   0x000dea    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_6   0x001bcc    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_7   0x001bda    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_7   0x000e08    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_8   0x001be8    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_8   0x000e20    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_9   0x001bf6    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_9   0x000e2e    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-               __string_0   0x001f6b    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
-               __string_1   0x001f52    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
-               __string_2   0x001f49    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
-               __string_3   0x001f3d    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
-               __string_4   0x001f31    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
-               __string_5   0x001f28    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
-               __string_6   0x001f1c    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
-               __string_7   0x001f0f    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
-               __string_8   0x001f06    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
-            __zero_memory   0x002020    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                _do_cinit   0x001d6c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   __pa_0   0x001f1e    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_0   0x0020aa    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                   __pa_1   0x001f4a    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_1   0x0020d4    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                  __pa_10   0x001fbc    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_2   0x0020fa    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                   __pa_2   0x001f54    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_3   0x002108    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                   __pa_3   0x001f5c    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_4   0x002116    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                   __pa_4   0x001f64    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_5   0x001f74    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_6   0x001f84    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_7   0x001f92    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_8   0x001fa0    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_9   0x001fae    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+               __string_0   0x002323    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
+               __string_1   0x00230a    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
+               __string_2   0x002301    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
+               __string_3   0x0022f5    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
+               __string_4   0x0022e9    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
+               __string_5   0x0022e0    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
+               __string_6   0x0022d4    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
+               __string_7   0x0022c7    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
+               __string_8   0x0022be    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
+            __zero_memory   0x0023d8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                _do_cinit   0x002124    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                   _false   0x001fb4    program     static                          
-                   _false   0x001fee    program     static                          
-                 _startup   0x002040    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                compare_l   0x002036    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                copy_loop   0x001dde    program     static                          
-            copy_one_byte   0x001de4    program     static                          
-                 delay_ms   0x0000c4    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-                     done   0x001e08    program     static                          
-             done_copying   0x001df2    program     static                          
-                  endloop   0x00201a    program     static                          
-                  get_adc   0x00014c    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-            get_adc_value   0x001e18    program     extern D:\ProjectTKLL\EMS_PIC.X\adc\adc.c
-               get_sensor   0x0002e4    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-                 high_isr   0x001c94    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-                 init_adc   0x001e0a    program     extern D:\ProjectTKLL\EMS_PIC.X\adc\adc.c
-            init_ext_int0   0x001c1a    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-           init_interrupt   0x001c12    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-              init_system   0x00007e    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-              init_timer0   0x0019ae    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-              init_timer1   0x0019da    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-              init_timer2   0x001a0c    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-              init_timer3   0x001a38    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                init_uart   0x00146e    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-                 jANotInf   0x001094    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                 jANotInf   0x00113a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-                 jANotInf   0x000f72    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jANotNeg   0x001006    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                jANotZero   0x0010a8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-              jAandWsetup   0x000fd6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jAltBexp   0x000fc4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                jBANotInf   0x000f68    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jBNotInf   0x000f80    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-              jBothFinite   0x001148    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-             jBothNotZero   0x001154    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-            jDifOrPosSign   0x000f94    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                    jExit   0x001360    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-               jFinalSign   0x00106e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                jHaveZero   0x001150    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-                jI2F32Beg   0x000f2e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast32FP.asm
-                    jLoop   0x001340    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jLoop   0x0010d0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                jLoopExit   0x001350    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                     jMax   0x001314    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jMaxNeg   0x001322    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jMaxPos   0x001318    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jNext   0x0010f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                jNoAdjust   0x0010f4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-             jNotBothZero   0x000f98    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                  jNotInf   0x001330    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jPkLoop   0x0013a8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-             jPkRoundDone   0x0013f2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-               jPkRoundIt   0x0013da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-             jPkShiftDone   0x0013c4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-           jReturnPosInf0   0x00137e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-               jShiftDone   0x00102e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-               jShiftLoop   0x001020    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                jSignDone   0x00105e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-              jSignedZero   0x00109e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                  jUnpkA1   0x00141c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkA2   0x001434    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkANZ   0x00142a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkB1   0x00144c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkB2   0x001464    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkBNZ   0x00145a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkNaN   0x00143e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jWNotNeg   0x00101a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                    jZero   0x00132a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-               jZero1and2   0x001382    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                lcd_clear   0x000d32    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-               lcd_clearS   0x000d3e    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                lcd_delay   0x000aba    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-       lcd_display_screen   0x000cf0    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                 lcd_init   0x0009c6    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-             lcd_power_of   0x000a10    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-           lcd_print_char   0x000b50    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-          lcd_print_charS   0x000b5e    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-           lcd_print_numS   0x000bcc    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-            lcd_print_str   0x000b98    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-         lcd_send_command   0x0009fe    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-           lcd_set_cursor   0x000b22    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-          lcd_write_4bits   0x000afe    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-            lcd_write_cmd   0x000b18    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-           lcd_write_data   0x000b0c    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                     loop   0x001f80    program     static                          
-                     loop   0x001fc6    program     static                          
-                     loop   0x002050    program     static                          
-                     loop   0x001ffe    program     static                          
-                   loop_h   0x00202e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   loop_l   0x002038    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                  low_isr   0x001c22    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                   _false   0x0023a6    program     static                          
+                   _false   0x00236c    program     static                          
+                 _startup   0x0023f8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                compare_l   0x0023ee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                copy_loop   0x002196    program     static                          
+            copy_one_byte   0x00219c    program     static                          
+                 delay_ms   0x0000c6    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+                     done   0x0021c0    program     static                          
+             done_copying   0x0021aa    program     static                          
+                  endloop   0x0023d2    program     static                          
+                  get_adc   0x00014e    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+            get_adc_value   0x0021d0    program     extern D:\ProjectTKLL\EMS_PIC.X\adc\adc.c
+               get_sensor   0x000318    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+                 high_isr   0x00204c    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                 init_adc   0x0021c2    program     extern D:\ProjectTKLL\EMS_PIC.X\adc\adc.c
+            init_ext_int0   0x001fd2    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+           init_interrupt   0x001fca    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                 init_lcd   0x000b08    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+              init_system   0x000080    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+              init_timer0   0x001d66    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+              init_timer1   0x001d92    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+              init_timer2   0x001dc4    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+              init_timer3   0x001df0    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                init_uart   0x001826    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+                 jANotInf   0x00132a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jANotInf   0x0014f2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                 jANotInf   0x00144c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                 jANotNeg   0x0013be    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jANotZero   0x001460    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+              jAandWsetup   0x00138e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jAltBexp   0x00137c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jBANotInf   0x001320    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jBNotInf   0x001338    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+              jBothFinite   0x001500    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+             jBothNotZero   0x00150c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+            jDifOrPosSign   0x00134c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    jExit   0x001718    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+               jFinalSign   0x001426    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jHaveZero   0x001508    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                jI2F32Beg   0x0012e6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast32FP.asm
+                    jLoop   0x0016f8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jLoop   0x001488    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jLoopExit   0x001708    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                     jMax   0x0016cc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxNeg   0x0016da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxPos   0x0016d0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jNext   0x0014ae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jNoAdjust   0x0014ac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+             jNotBothZero   0x001350    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                  jNotInf   0x0016e8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jPkLoop   0x001760    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkRoundDone   0x0017aa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jPkRoundIt   0x001792    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkShiftDone   0x00177c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+           jReturnPosInf0   0x001736    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jShiftDone   0x0013e6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jShiftLoop   0x0013d8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jSignDone   0x001416    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+              jSignedZero   0x001456    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                  jUnpkA1   0x0017d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkA2   0x0017ec    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkANZ   0x0017e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB1   0x001804    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB2   0x00181c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkBNZ   0x001812    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkNaN   0x0017f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jWNotNeg   0x0013d2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    jZero   0x0016e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+               jZero1and2   0x00173a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                lcd_clear   0x001258    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+               lcd_clearS   0x00126c    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+                lcd_delay   0x000d78    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+       lcd_display_screen   0x0011ee    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+             lcd_power_of   0x000c96    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+           lcd_print_char   0x000f02    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+          lcd_print_charS   0x000f1c    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+           lcd_print_numS   0x000fa2    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+            lcd_print_str   0x000f62    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+         lcd_send_command   0x000c16    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+           lcd_set_cursor   0x000ec8    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+          lcd_write_4bits   0x000e08    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+            lcd_write_cmd   0x000e8c    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+           lcd_write_data   0x000e4e    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+                     loop   0x00237e    program     static                          
+                     loop   0x0023b6    program     static                          
+                     loop   0x002408    program     static                          
+                     loop   0x002338    program     static                          
+                   loop_h   0x0023e6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_l   0x0023f0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  low_isr   0x001fda    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
                      main   0x000044    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-            send_software   0x0007ce    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-             start_timer0   0x0019d4    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-             start_timer1   0x001a02    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-             start_timer2   0x001a2c    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-             start_timer3   0x001a66    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-              stop_timer0   0x0019d0    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-              stop_timer1   0x001a08    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-              stop_timer2   0x001a34    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-              stop_timer3   0x001a76    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                     test   0x001d86    program     static                          
-               timer0_isr   0x001a7a    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-               timer1_isr   0x001a96    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-               timer2_isr   0x001ab2    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-               timer3_isr   0x001ace    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-            uart_delay_ms   0x00148c    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-                 uart_isr   0x0019ac    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-            uart_power_of   0x0015bc    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-             uart_putchar   0x001514    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-            uart_send_num   0x00169e    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-    uart_send_num_percent   0x0018d4    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-            uart_send_str   0x001530    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-         uart_send_string   0x001570    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-                 v_timer0   0x000982    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-               zero_block   0x00202e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+            send_software   0x0008c4    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+             start_timer0   0x001d8c    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+             start_timer1   0x001dba    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+             start_timer2   0x001de4    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+             start_timer3   0x001e1e    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+              stop_timer0   0x001d88    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+              stop_timer1   0x001dc0    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+              stop_timer2   0x001dec    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+              stop_timer3   0x001e2e    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                     test   0x00213e    program     static                          
+               timer0_isr   0x001e32    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+               timer1_isr   0x001e4e    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+               timer2_isr   0x001e6a    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+               timer3_isr   0x001e86    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+            uart_delay_ms   0x001844    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+                 uart_isr   0x001d64    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+            uart_power_of   0x001974    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+             uart_putchar   0x0018cc    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+            uart_send_num   0x001a56    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+    uart_send_num_percent   0x001c8c    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+            uart_send_str   0x0018e8    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+         uart_send_string   0x001928    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+                 v_timer0   0x000a78    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+               zero_block   0x0023e6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -369,7 +343,7 @@ Linker Map File - Created Wed Dec 14 15:10:29 2022
                    CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     CMCON   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                COD_value   0x0000d0       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+                COD_value   0x0000d2       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
                    CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -390,7 +364,7 @@ Linker Map File - Created Wed Dec 14 15:10:29 2022
                EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-               FLOW_value   0x0000d6       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+               FLOW_value   0x0000da       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
                      FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -428,8 +402,8 @@ Linker Map File - Created Wed Dec 14 15:10:29 2022
                    LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 LcdScreen   0x0000a0       data     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                NH4_value   0x0000d2       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-                NO3_value   0x0000d4       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+                NH4_value   0x0000d6       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+                NO3_value   0x0000d8       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
                    OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -490,7 +464,7 @@ Linker Map File - Created Wed Dec 14 15:10:29 2022
               SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 SS_value   0x0000ce       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+                 SS_value   0x0000d0       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
                    STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -508,7 +482,7 @@ Linker Map File - Created Wed Dec 14 15:10:29 2022
                   TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                TMP_value   0x0000d8       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+                TMP_value   0x0000d4       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
                     TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -568,21 +542,21 @@ Linker Map File - Created Wed Dec 14 15:10:29 2022
                   __tmp_0   0x000000       data     static D:\ProjectTKLL\EMS_PIC.X\main.c
                   __tmp_0   0x000000       data     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
                  adcValue   0x0000c0       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-                     cnt0   0x0000ea       data     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-                     cnt1   0x0000ec       data     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-                curr_byte   0x0000df       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               curr_entry   0x0000e1       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-              current_col   0x0000e8       data     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-              current_row   0x0000e6       data     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-              dataReceive   0x0000ee       data     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-                 data_ptr   0x0000e3       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     cnt0   0x0000ec       data     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                     cnt1   0x0000ee       data     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                curr_byte   0x0000e1       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0000e3       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              current_col   0x0000ea       data     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+              current_row   0x0000e8       data     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+              dataReceive   0x0000f0       data     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+                 data_ptr   0x0000e5       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
               flag_timer0   0x000088       data     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
               flag_timer1   0x000089       data     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
               flag_timer2   0x00008a       data     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
               flag_timer3   0x00008b       data     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                 pH_value   0x0000cc       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-                     prom   0x0000dc       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-              simulateCnt   0x0000da       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+                 pH_value   0x0000ce       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+                     prom   0x0000de       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              simulateCnt   0x0000dc       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
                 time0_MUL   0x000098       data     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
                 time1_MUL   0x00009a       data     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
                 time2_MUL   0x00009c       data     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
@@ -611,223 +585,197 @@ Linker Map File - Created Wed Dec 14 15:10:29 2022
        InterruptVectorLow   0x000018    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
        ___return_lbl00002   0x00001c    program     static                          
                      main   0x000044    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-              init_system   0x00007e    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-                 delay_ms   0x0000c4    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-                  get_adc   0x00014c    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-               get_sensor   0x0002e4    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-            send_software   0x0007ce    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-                 v_timer0   0x000982    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                 lcd_init   0x0009c6    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-         lcd_send_command   0x0009fe    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-             lcd_power_of   0x000a10    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                lcd_delay   0x000aba    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-          lcd_write_4bits   0x000afe    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-           lcd_write_data   0x000b0c    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-            lcd_write_cmd   0x000b18    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-           lcd_set_cursor   0x000b22    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-           lcd_print_char   0x000b50    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-          lcd_print_charS   0x000b5e    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-            lcd_print_str   0x000b98    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-           lcd_print_numS   0x000bcc    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-       lcd_display_screen   0x000cf0    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                lcd_clear   0x000d32    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-               lcd_clearS   0x000d3e    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_0   0x000d90    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_1   0x000d9e    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_2   0x000da8    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_3   0x000db0    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_4   0x000dbe    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_5   0x000ddc    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_6   0x000dea    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_7   0x000e08    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_8   0x000e20    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                   __pa_9   0x000e2e    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_10   0x000e40    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_11   0x000e52    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_12   0x000e64    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_13   0x000e72    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_14   0x000e80    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_15   0x000e8e    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_16   0x000e9a    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_17   0x000ea4    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_18   0x000eac    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_19   0x000eb8    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_20   0x000ec2    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_21   0x000ecc    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_22   0x000ede    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_23   0x000ef0    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_24   0x000efc    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                  __pa_25   0x000f08    program     static D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                 FLO3232U   0x000f12    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast32FP.asm
-                 FLO3232S   0x000f16    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast32FP.asm
-                jI2F32Beg   0x000f2e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast32FP.asm
-                    FPS32   0x000f48    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                    FPA32   0x000f4a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                jBANotInf   0x000f68    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jANotInf   0x000f72    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jBNotInf   0x000f80    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-            jDifOrPosSign   0x000f94    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-             jNotBothZero   0x000f98    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jAltBexp   0x000fc4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-              jAandWsetup   0x000fd6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jANotNeg   0x001006    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jWNotNeg   0x00101a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-               jShiftLoop   0x001020    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-               jShiftDone   0x00102e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                jSignDone   0x00105e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-               jFinalSign   0x00106e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                    FPD32   0x001076    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                 jANotInf   0x001094    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-              jSignedZero   0x00109e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                jANotZero   0x0010a8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                    jLoop   0x0010d0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                jNoAdjust   0x0010f4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                    jNext   0x0010f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                    FPM32   0x00111c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-                 jANotInf   0x00113a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-              jBothFinite   0x001148    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-                jHaveZero   0x001150    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-             jBothNotZero   0x001154    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-                 FXD1616S   0x0011f6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  DA1616S   0x001208    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                   D1616S   0x001218    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x001222    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x001226    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x001238    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 FXD2424S   0x001242    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  DA2424S   0x001258    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                   D2424S   0x00126c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                 D2424SOK   0x001276    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                D2424SNEG   0x00127a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  D2424SX   0x001292    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                 FXD3232S   0x00129c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                  DA3232S   0x0012b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                   D3232S   0x0012cc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                 D3232SOK   0x0012d6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                D3232SNEG   0x0012da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                  D3232SX   0x0012fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                  INT3216   0x001304    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                     jMax   0x001314    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jMaxPos   0x001318    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jMaxNeg   0x001322    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jZero   0x00132a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jNotInf   0x001330    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jLoop   0x001340    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                jLoopExit   0x001350    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jExit   0x001360    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-            __FpReturnNaN   0x001362    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                 __FpExit   0x00136e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnSignInf   0x001370    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-         __FpReturnNegInf   0x001374    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-         __FpReturnPosInf   0x00137a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-           jReturnPosInf0   0x00137e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-               jZero1and2   0x001382    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-       __FpReturnSignZero   0x001388    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnNegZero   0x00138c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnPosZero   0x001394    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                 __FpPack   0x00139a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                  jPkLoop   0x0013a8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-             jPkShiftDone   0x0013c4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-               jPkRoundIt   0x0013da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-              __FpReturnW   0x0013f2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-             jPkRoundDone   0x0013f2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-              __FpUnPackA   0x001412    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkA1   0x00141c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkANZ   0x00142a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkA2   0x001434    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkNaN   0x00143e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-              __FpUnPackB   0x001442    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkB1   0x00144c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkBNZ   0x00145a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkB2   0x001464    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                init_uart   0x00146e    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-            uart_delay_ms   0x00148c    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-             uart_putchar   0x001514    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-            uart_send_str   0x001530    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-         uart_send_string   0x001570    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-            uart_power_of   0x0015bc    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-            uart_send_num   0x00169e    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-    uart_send_num_percent   0x0018d4    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-                 uart_isr   0x0019ac    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
-              init_timer0   0x0019ae    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-              stop_timer0   0x0019d0    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-             start_timer0   0x0019d4    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-              init_timer1   0x0019da    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-             start_timer1   0x001a02    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-              stop_timer1   0x001a08    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-              init_timer2   0x001a0c    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-             start_timer2   0x001a2c    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-              stop_timer2   0x001a34    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-              init_timer3   0x001a38    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-             start_timer3   0x001a66    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-              stop_timer3   0x001a76    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-               timer0_isr   0x001a7a    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-               timer1_isr   0x001a96    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-               timer2_isr   0x001ab2    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-               timer3_isr   0x001ace    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-             SetTimer0_ms   0x001aea    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-             SetTimer1_ms   0x001b02    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-             SetTimer3_ms   0x001b34    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_0   0x001b66    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_1   0x001b92    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_2   0x001b9c    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_3   0x001ba4    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_4   0x001bac    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_5   0x001bbc    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_6   0x001bcc    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_7   0x001bda    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_8   0x001be8    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                   __pa_9   0x001bf6    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-                  __pa_10   0x001c04    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
-           init_interrupt   0x001c12    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-            init_ext_int0   0x001c1a    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-                  low_isr   0x001c22    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-                 high_isr   0x001c94    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-                   __pa_0   0x001cf2    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-                   __pa_1   0x001d1c    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-                   __pa_2   0x001d42    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-                   __pa_3   0x001d50    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-                   __pa_4   0x001d5e    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-                _do_cinit   0x001d6c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x001d86    program     static                          
-                copy_loop   0x001dde    program     static                          
-            copy_one_byte   0x001de4    program     static                          
-             done_copying   0x001df2    program     static                          
-                     done   0x001e08    program     static                          
-       ___return_lbl00002   0x001e08    program     static                          
-                 init_adc   0x001e0a    program     extern D:\ProjectTKLL\EMS_PIC.X\adc\adc.c
-            get_adc_value   0x001e18    program     extern D:\ProjectTKLL\EMS_PIC.X\adc\adc.c
-                  FXM3232   0x001e96    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
-       ___return_lbl00000   0x001f04    program     static                          
-               __string_8   0x001f06    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
-               __string_7   0x001f0f    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
-               __string_6   0x001f1c    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
-               __string_5   0x001f28    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
-               __string_4   0x001f31    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
-               __string_3   0x001f3d    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
-               __string_2   0x001f49    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
-               __string_1   0x001f52    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
-               __string_0   0x001f6b    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
-                 FXD3232U   0x001f72    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                     loop   0x001f80    program     static                          
-                   _false   0x001fb4    program     static                          
-       ___return_lbl00000   0x001fb8    program     static                          
-                 FXD2424U   0x001fba    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
-                     loop   0x001fc6    program     static                          
-                   _false   0x001fee    program     static                          
-       ___return_lbl00000   0x001ff2    program     static                          
-                 FXD1616U   0x001ff4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                     loop   0x001ffe    program     static                          
-                  endloop   0x00201a    program     static                          
-       ___return_lbl00000   0x00201e    program     static                          
-            __zero_memory   0x002020    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-               zero_block   0x00202e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   loop_h   0x00202e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                compare_l   0x002036    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   loop_l   0x002038    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 _startup   0x002040    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x002050    program     static                          
-       ___return_lbl00001   0x00205a    program     static                          
+              init_system   0x000080    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+                 delay_ms   0x0000c6    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+                  get_adc   0x00014e    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+               get_sensor   0x000318    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+            send_software   0x0008c4    program     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+                 v_timer0   0x000a78    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+                 init_lcd   0x000b08    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+         lcd_send_command   0x000c16    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+             lcd_power_of   0x000c96    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+                lcd_delay   0x000d78    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+          lcd_write_4bits   0x000e08    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+           lcd_write_data   0x000e4e    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+            lcd_write_cmd   0x000e8c    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+           lcd_set_cursor   0x000ec8    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+           lcd_print_char   0x000f02    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+          lcd_print_charS   0x000f1c    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+            lcd_print_str   0x000f62    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+           lcd_print_numS   0x000fa2    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+       lcd_display_screen   0x0011ee    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+                lcd_clear   0x001258    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+               lcd_clearS   0x00126c    program     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+                 FLO3232U   0x0012ca    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast32FP.asm
+                 FLO3232S   0x0012ce    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast32FP.asm
+                jI2F32Beg   0x0012e6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast32FP.asm
+                    FPS32   0x001300    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    FPA32   0x001302    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jBANotInf   0x001320    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jANotInf   0x00132a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jBNotInf   0x001338    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+            jDifOrPosSign   0x00134c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+             jNotBothZero   0x001350    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jAltBexp   0x00137c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+              jAandWsetup   0x00138e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jANotNeg   0x0013be    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jWNotNeg   0x0013d2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jShiftLoop   0x0013d8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jShiftDone   0x0013e6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jSignDone   0x001416    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jFinalSign   0x001426    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    FPD32   0x00142e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                 jANotInf   0x00144c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+              jSignedZero   0x001456    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jANotZero   0x001460    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    jLoop   0x001488    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jNoAdjust   0x0014ac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    jNext   0x0014ae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    FPM32   0x0014d4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                 jANotInf   0x0014f2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+              jBothFinite   0x001500    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                jHaveZero   0x001508    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+             jBothNotZero   0x00150c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                 FXD1616S   0x0015ae    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x0015c0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                   D1616S   0x0015d0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x0015da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x0015de    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x0015f0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 FXD2424S   0x0015fa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  DA2424S   0x001610    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                   D2424S   0x001624    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 D2424SOK   0x00162e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                D2424SNEG   0x001632    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  D2424SX   0x00164a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 FXD3232S   0x001654    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                  DA3232S   0x00166e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                   D3232S   0x001684    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                 D3232SOK   0x00168e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                D3232SNEG   0x001692    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                  D3232SX   0x0016b2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                  INT3216   0x0016bc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                     jMax   0x0016cc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxPos   0x0016d0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxNeg   0x0016da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jZero   0x0016e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jNotInf   0x0016e8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jLoop   0x0016f8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                jLoopExit   0x001708    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jExit   0x001718    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+            __FpReturnNaN   0x00171a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                 __FpExit   0x001726    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnSignInf   0x001728    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnNegInf   0x00172c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnPosInf   0x001732    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+           jReturnPosInf0   0x001736    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jZero1and2   0x00173a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+       __FpReturnSignZero   0x001740    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnNegZero   0x001744    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnPosZero   0x00174c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                 __FpPack   0x001752    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                  jPkLoop   0x001760    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkShiftDone   0x00177c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jPkRoundIt   0x001792    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkRoundDone   0x0017aa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpReturnW   0x0017aa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpUnPackA   0x0017ca    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkA1   0x0017d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkANZ   0x0017e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkA2   0x0017ec    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkNaN   0x0017f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+              __FpUnPackB   0x0017fa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB1   0x001804    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkBNZ   0x001812    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB2   0x00181c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                init_uart   0x001826    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+            uart_delay_ms   0x001844    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+             uart_putchar   0x0018cc    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+            uart_send_str   0x0018e8    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+         uart_send_string   0x001928    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+            uart_power_of   0x001974    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+            uart_send_num   0x001a56    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+    uart_send_num_percent   0x001c8c    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+                 uart_isr   0x001d64    program     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+              init_timer0   0x001d66    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+              stop_timer0   0x001d88    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+             start_timer0   0x001d8c    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+              init_timer1   0x001d92    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+             start_timer1   0x001dba    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+              stop_timer1   0x001dc0    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+              init_timer2   0x001dc4    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+             start_timer2   0x001de4    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+              stop_timer2   0x001dec    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+              init_timer3   0x001df0    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+             start_timer3   0x001e1e    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+              stop_timer3   0x001e2e    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+               timer0_isr   0x001e32    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+               timer1_isr   0x001e4e    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+               timer2_isr   0x001e6a    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+               timer3_isr   0x001e86    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+             SetTimer0_ms   0x001ea2    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+             SetTimer1_ms   0x001eba    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+             SetTimer3_ms   0x001eec    program     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_0   0x001f1e    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_1   0x001f4a    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_2   0x001f54    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_3   0x001f5c    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_4   0x001f64    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_5   0x001f74    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_6   0x001f84    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_7   0x001f92    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_8   0x001fa0    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                   __pa_9   0x001fae    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+                  __pa_10   0x001fbc    program     static D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
+           init_interrupt   0x001fca    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+            init_ext_int0   0x001fd2    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                  low_isr   0x001fda    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                 high_isr   0x00204c    program     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                   __pa_0   0x0020aa    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                   __pa_1   0x0020d4    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                   __pa_2   0x0020fa    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                   __pa_3   0x002108    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                   __pa_4   0x002116    program     static D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                _do_cinit   0x002124    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x00213e    program     static                          
+                copy_loop   0x002196    program     static                          
+            copy_one_byte   0x00219c    program     static                          
+             done_copying   0x0021aa    program     static                          
+       ___return_lbl00002   0x0021c0    program     static                          
+                     done   0x0021c0    program     static                          
+                 init_adc   0x0021c2    program     extern D:\ProjectTKLL\EMS_PIC.X\adc\adc.c
+            get_adc_value   0x0021d0    program     extern D:\ProjectTKLL\EMS_PIC.X\adc\adc.c
+                  FXM3232   0x00224e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+       ___return_lbl00000   0x0022bc    program     static                          
+               __string_8   0x0022be    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
+               __string_7   0x0022c7    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
+               __string_6   0x0022d4    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
+               __string_5   0x0022e0    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
+               __string_4   0x0022e9    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
+               __string_3   0x0022f5    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
+               __string_2   0x002301    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
+               __string_1   0x00230a    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
+               __string_0   0x002323    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
+                 FXD3232U   0x00232a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                     loop   0x002338    program     static                          
+                   _false   0x00236c    program     static                          
+       ___return_lbl00000   0x002370    program     static                          
+                 FXD2424U   0x002372    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
+                     loop   0x00237e    program     static                          
+                   _false   0x0023a6    program     static                          
+       ___return_lbl00000   0x0023aa    program     static                          
+                 FXD1616U   0x0023ac    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                     loop   0x0023b6    program     static                          
+                  endloop   0x0023d2    program     static                          
+       ___return_lbl00000   0x0023d6    program     static                          
+            __zero_memory   0x0023d8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               zero_block   0x0023e6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_h   0x0023e6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                compare_l   0x0023ee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_l   0x0023f0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 _startup   0x0023f8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x002408    program     static                          
+       ___return_lbl00001   0x002412    program     static                          
                __config_0   0x300001    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
                __config_1   0x300002    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
                __config_2   0x300003    program     static D:\ProjectTKLL\EMS_PIC.X\main.c
@@ -890,63 +838,63 @@ Linker Map File - Created Wed Dec 14 15:10:29 2022
                 time3_MUL   0x00009e       data     extern D:\ProjectTKLL\EMS_PIC.X\timer\timer.c
                 LcdScreen   0x0000a0       data     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
                  adcValue   0x0000c0       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-                 pH_value   0x0000cc       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-                 SS_value   0x0000ce       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-                COD_value   0x0000d0       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-                NH4_value   0x0000d2       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-                NO3_value   0x0000d4       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-               FLOW_value   0x0000d6       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-                TMP_value   0x0000d8       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-              simulateCnt   0x0000da       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
-                     prom   0x0000dc       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                curr_byte   0x0000df       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               curr_entry   0x0000e1       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 data_ptr   0x0000e3       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-              current_row   0x0000e6       data     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-              current_col   0x0000e8       data     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
-                     cnt0   0x0000ea       data     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-                     cnt1   0x0000ec       data     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
-              dataReceive   0x0000ee       data     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
+                 pH_value   0x0000ce       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+                 SS_value   0x0000d0       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+                COD_value   0x0000d2       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+                TMP_value   0x0000d4       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+                NH4_value   0x0000d6       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+                NO3_value   0x0000d8       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+               FLOW_value   0x0000da       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+              simulateCnt   0x0000dc       data     extern D:\ProjectTKLL\EMS_PIC.X\main.c
+                     prom   0x0000de       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x0000e1       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0000e3       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0000e5       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              current_row   0x0000e8       data     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+              current_col   0x0000ea       data     extern D:\ProjectTKLL\EMS_PIC.X\lcd\lcd.c
+                     cnt0   0x0000ec       data     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+                     cnt1   0x0000ee       data     extern D:\ProjectTKLL\EMS_PIC.X\interrupt\interrupt.c
+              dataReceive   0x0000f0       data     extern D:\ProjectTKLL\EMS_PIC.X\uart\uart.c
                 PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTD   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  LATDbits   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               OSCTUNEbits   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -955,22 +903,22 @@ Linker Map File - Created Wed Dec 14 15:10:29 2022
                      PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    EEADRH   0x000faa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -979,8 +927,8 @@ Linker Map File - Created Wed Dec 14 15:10:29 2022
                 T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     CMCON   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm

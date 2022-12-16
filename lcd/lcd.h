@@ -31,7 +31,7 @@
 #define LCD_DATA_IN         LCD_PORT & 0x0F;
 #define LCD_DIR_IN          LCD_PORT |= 0x0F;
 
-void lcd_init(void);
+void init_lcd(void);
 void lcd_send_command(unsigned char cmd);
 unsigned long lcd_power_of(int A, int x);
 void lcd_delay(unsigned long time);
