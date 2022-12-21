@@ -1,0 +1,6 @@
+Warning[2054] D:\ProjectTKLL\EMS_PIC.X\fsm\fsm_mode.c 14 : suspicious pointer conversion
+Warning[2058] D:\ProjectTKLL\EMS_PIC.X\fsm\fsm_mode.c 16 : call of function without prototype
+Warning[2054] D:\ProjectTKLL\EMS_PIC.X\fsm\fsm_mode.c 30 : suspicious pointer conversion
+Warning[2058] D:\ProjectTKLL\EMS_PIC.X\fsm\fsm_mode.c 32 : call of function without prototype
+Warning[2054] D:\ProjectTKLL\EMS_PIC.X\fsm\fsm_mode.c 37 : suspicious pointer conversion
+Warning[2054] D:\ProjectTKLL\EMS_PIC.X\fsm\fsm_mode.c 42 : suspicious pointer conversion

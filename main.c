@@ -2,15 +2,9 @@
 
 unsigned int adcValue[7];
 
-unsigned int pH_value;
-unsigned int SS_value;
-unsigned int COD_value;
-unsigned int TMP_value;
-unsigned int NH4_value;
-unsigned int NO3_value;
-unsigned int FLOW_value;
-
 unsigned int simulateCnt;
+
+int count = 0;
 
 void init_system(void);
 void delay_ms(int value);
@@ -21,18 +15,30 @@ void send_software(void);
 void main(void)
 {
     init_system();
-    lcd_print_str("Hello");
-    delay_ms(1000);
+//    lcd_print_stringS(0, 0, "Hello");
+//    lcd_display_screen();
+//    delay_ms(1000);
     
     while(1)
     {
         while(!flag_timer3);
-        lcd_clearS();
+//        lcd_clear();
         flag_timer3 = 0;
-        get_adc();
-        get_sensor();
-        send_software();
-        lcd_display_screen();
+//        get_adc();
+//        get_sensor();
+//        send_software();
+        scan_key_matrix();
+        
+        fsm_mode_run();
+        fsm_display_run();
+        
+        fsm_pH_run();
+        fsm_SS_run();
+        fsm_COD_run();
+        fsm_TMP_run();
+        fsm_NH4_run();
+        fsm_NO3_run();
+        fsm_FLOW_run();
     }
 }
 
@@ -42,12 +48,13 @@ void init_system(void)
     init_lcd();
     lcd_clear();
     lcd_clearS();
-    delay_ms(500);
     init_interrupt();
     init_adc();
     init_timer3(46950); //dinh thoi 10ms
 	SetTimer3_ms(50);   //Chu ky thuc hien viec xu ly input,proccess,output
     init_uart();
+    init_key_matrix();
+    delay_ms(200);
 }
 
 void delay_ms(int value) 
@@ -67,13 +74,13 @@ void get_adc(void)
         delay_ms(20);
     }
     
-    lcd_print_numS(0, 4, adcValue[0]);
-    lcd_print_numS(0, 8, adcValue[1]);
-    lcd_print_numS(0, 12, adcValue[2]);
-    lcd_print_numS(1, 0, adcValue[3]);
-    lcd_print_numS(1, 4, adcValue[4]);
-    lcd_print_numS(1, 8, adcValue[5]);
-    lcd_print_numS(1, 12, adcValue[6]);
+//    lcd_print_numS(0, 4, adcValue[0]);
+//    lcd_print_numS(0, 8, adcValue[1]);
+//    lcd_print_numS(0, 12, adcValue[2]);
+//    lcd_print_numS(1, 0, adcValue[3]);
+//    lcd_print_numS(1, 4, adcValue[4]);
+//    lcd_print_numS(1, 8, adcValue[5]);
+//    lcd_print_numS(1, 12, adcValue[6]);
     
 }
 

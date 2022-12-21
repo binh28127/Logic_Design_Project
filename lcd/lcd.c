@@ -149,6 +149,20 @@ void lcd_print_str(const rom unsigned char *string)
     }
 }
 
+void lcd_print_string(unsigned char x, unsigned char y, unsigned char *string)
+{
+	lcd_set_cursor(x,y);
+	lcd_print_str(string);
+}
+
+void lcd_print_stringS(unsigned char x, unsigned char y, const rom unsigned char *string)
+{
+    current_row = x%2;
+    current_col = y%16;
+    while (*string)  {
+    lcd_print_charS (*string++);}
+}
+
 void lcd_print_numS(unsigned char x, unsigned char y, long num)
 {
     char num_flag = 0;

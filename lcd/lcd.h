@@ -42,6 +42,8 @@ void lcd_set_cursor (unsigned char row, unsigned char column);
 void lcd_print_char(char c);
 void lcd_print_charS(unsigned char c);
 void lcd_print_str(const rom unsigned char *string);
+void lcd_print_string(unsigned char x, unsigned char y, unsigned char * string);
+void lcd_print_stringS(unsigned char x, unsigned char y, const rom unsigned char *string);
 void lcd_print_numS(unsigned char x, unsigned char y, long num);
 void lcd_display_screen(void);
 void lcd_clear (void);
