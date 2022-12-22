@@ -31,6 +31,9 @@
 #define SET_NO3_max         31
 #define SET_FLOW_max        32
 
+#define NORMAL_CONDITION    35
+#define WARNING_CONDITION   36
+
 #define BUTTON_1        0
 #define BUTTON_2        1
 #define BUTTON_3        2

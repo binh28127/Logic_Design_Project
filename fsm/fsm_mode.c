@@ -10,18 +10,14 @@ void fsm_mode_run(void)
     switch(mode){
         case MODE_INIT:
             mode = WARNING_MODE;
-            lcd_clearS();
-            lcd_print_stringS(0, 0, "WARNING MODE");
-            lcd_display_screen();
-            delay_ms(200);
             break;
             
         case WARNING_MODE:
-            if (is_button_pressed(BUTTON_1)) {
-                mode = DISPLAY_MODE;
-            }
-            // Check if all parameters are in safe threshold
-            
+            mode = NORMAL_CONDITION;
+            lcd_clearS();
+            lcd_print_stringS(0, 0, "WARNING MODE");
+            lcd_display_screen();
+            delay_ms(500);
             break;
             
         case DISPLAY_MODE:            

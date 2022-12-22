@@ -13,6 +13,18 @@ extern unsigned int FLOW_value;
 
 extern unsigned int pH_value_min;
 extern unsigned int pH_value_max;
+extern unsigned int SS_value_min;
+extern unsigned int SS_value_max;
+extern unsigned int COD_value_min;
+extern unsigned int COD_value_max;
+extern unsigned int TMP_value_min;
+extern unsigned int TMP_value_max;
+extern unsigned int NH4_value_min;
+extern unsigned int NH4_value_max;
+extern unsigned int NO3_value_min;
+extern unsigned int NO3_value_max;
+extern unsigned int FLOW_value_min;
+extern unsigned int FLOW_value_max;
 
 void fsm_display_run(void);
 void fsm_pH_run(void);

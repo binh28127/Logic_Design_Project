@@ -24,13 +24,14 @@ void main(void)
         while(!flag_timer3);
 //        lcd_clear();
         flag_timer3 = 0;
-//        get_adc();
-//        get_sensor();
-//        send_software();
+        get_adc();
+        get_sensor();
+        send_software();                  
         scan_key_matrix();
         
         fsm_mode_run();
         fsm_display_run();
+        fsm_warning_run();
         
         fsm_pH_run();
         fsm_SS_run();
@@ -86,13 +87,13 @@ void get_adc(void)
 
 void get_sensor(void)
 {
-    pH_value = (6.9 + (long)adcValue[0] * (7.8 - 6.9) / 1023) * 100;
-    SS_value = (28.0 + (long)adcValue[1] * (45.0 - 28.0) / 1023) * 100;
-    COD_value = (90.0 + (long)adcValue[2] * (180.0 - 90.0) / 1023) * 100;
-    TMP_value = (25.0 + (long)adcValue[3] * (33.0 - 25.0) / 1023) * 100;
-    NH4_value = (2.1 + (long)adcValue[4] * (5.4 - 2.1) / 86) * 100;
-    NO3_value = (1.5 + (long)adcValue[5] * (5.5 - 1.5) / 1023) * 100;
-    FLOW_value = (160.0 + (long)adcValue[6] * (250.0 - 160.0) / 1023) * 100;
+    pH_value = (0.0 + (long)adcValue[0] * (14.0 - 0.0) / 1023) * 100;
+    SS_value = (0.0 + (long)adcValue[1] * (80.0 - 0.0) / 1023) * 100;
+    COD_value = (40.0 + (long)adcValue[2] * (250.0 - 40.0) / 1023) * 100;
+    TMP_value = (0.0 + (long)adcValue[3] * (60.0 - 0.0) / 1023) * 100;
+    NH4_value = (0.0 + (long)adcValue[4] * (12.0 - 0.0) / 86) * 100;
+    NO3_value = (0.0 + (long)adcValue[5] * (12.0 - 0.0) / 1023) * 100;
+    FLOW_value = (90.0 + (long)adcValue[6] * (400.0 - 90.0) / 1023) * 100;
 }
 
 void send_software(void)
