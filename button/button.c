@@ -68,7 +68,7 @@ unsigned int is_button_pressed(unsigned int button)
 {
     if (key_code[button]) {
         key_code[button] = 0;
-        button_delay_ms(100);
+        button_delay_ms(200);
         return 1;
     }
     else return 0;

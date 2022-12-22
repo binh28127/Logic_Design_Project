@@ -16,15 +16,18 @@ unsigned int warning_arr[7] = { 0, 0, 0, 0, 0, 0, 0 };
 unsigned int current_r = 0;
 unsigned int current_c = 0;
 unsigned int idx = 0;
+unsigned int delay_count = 0;
 
 unsigned int check_parameters(void);
-void warning_display_high(void);
-void warning_display_low(void);
+void warning_display(void);
 
 void fsm_warning_run(void)
 {
     switch(mode) {
         case NORMAL_CONDITION:
+            if (is_button_pressed(BUTTON_1)) {
+                mode = DISPLAY_MODE;
+            }
             if (check_parameters()) {
                 mode = WARNING_CONDITION;
             }
@@ -36,6 +39,9 @@ void fsm_warning_run(void)
             break;
             
         case WARNING_CONDITION:
+            if (is_button_pressed(BUTTON_1)) {
+                mode = DISPLAY_MODE;
+            }
             if (!check_parameters()) {
                 mode = NORMAL_CONDITION;
                 current_c = 0;
@@ -46,18 +52,38 @@ void fsm_warning_run(void)
                 lcd_print_stringS(0, 0, "HIGH: ");
                 current_c = 6;
                 current_r = 0;
-                warning_display_high();
+                for (idx = 0; idx < 7; idx++) {
+                    if (warning_arr[idx] == 1) {
+                        warning_display();
+                    }
+                }
                 lcd_display_screen();
-                delay_ms(1000);
+//                delay_ms(1000);
+                for (delay_count = 0; delay_count < 238 * 3000; delay_count++) {
+                    if (is_button_pressed(BUTTON_1)) {
+                        mode = DISPLAY_MODE;
+                        break;
+                    }
+                }
             }
             if (check_parameters() == 2 || check_parameters() == 3) {
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "LOW: ");
                 current_c = 5;
                 current_r = 0;
-                warning_display_low();
+                for (idx = 0; idx < 7; idx++) {
+                    if (warning_arr[idx] == 2) {
+                        warning_display();
+                    }
+                }
                 lcd_display_screen();
-                delay_ms(1000);
+//                delay_ms(1000);
+                for (delay_count = 0; delay_count < 238 * 3000; delay_count++) {
+                    if (is_button_pressed(BUTTON_1)) {
+                        mode = DISPLAY_MODE;
+                        break;
+                    }
+                }
             }
             break;
             
@@ -115,90 +141,42 @@ unsigned int check_parameters(void)
     return warning_type;
 }
 
-void warning_display_high(void)
+void warning_display(void)
 {
-    for (idx = 0; idx < 7; idx++) {
-        if (warning_arr[idx] == 1) {
-            switch(idx) {
-                case pH:
-                    lcd_print_stringS(current_r, current_c, "pH");
-                    current_c += 3;
-                    break;
-                case SS:
-                    lcd_print_stringS(current_r, current_c, "SS");
-                    current_c += 3;
-                    break;
-                case COD:
-                    lcd_print_stringS(current_r, current_c, "COD");
-                    current_c += 4;
-                    break;
-                case TMP:
-                    lcd_print_stringS(current_r, current_c, "TMP");
-                    current_c += 4;
-                    break;
-                case NH4:
-                    lcd_print_stringS(current_r, current_c, "NH4");
-                    current_c += 4;
-                    break;
-                case NO3:
-                    lcd_print_stringS(current_r, current_c, "NO3");
-                    current_c += 4;
-                    break;
-                case FLOW:
-                    lcd_print_stringS(current_r, current_c, "FLOW");
-                    current_c += 5;
-                    break;
-                default:
-                    break;
-            }
-            if (current_c > 15) {
-                current_r = 1;
-            }
-            else current_r = 0;
-        }
+    switch(idx) {
+        case pH:
+            lcd_print_stringS(current_r, current_c, "pH");
+            current_c += 3;
+            break;
+        case SS:
+            lcd_print_stringS(current_r, current_c, "SS");
+            current_c += 3;
+            break;
+        case COD:
+            lcd_print_stringS(current_r, current_c, "COD");
+            current_c += 4;
+            break;
+        case TMP:
+            lcd_print_stringS(current_r, current_c, "TMP");
+            current_c += 4;
+            break;
+        case NH4:
+            lcd_print_stringS(current_r, current_c, "NH4");
+            current_c += 4;
+            break;
+        case NO3:
+            lcd_print_stringS(current_r, current_c, "NO3");
+            current_c += 4;
+            break;
+        case FLOW:
+            lcd_print_stringS(current_r, current_c, "FLOW");
+            current_c += 5;
+            break;
+        default:
+            break;
     }
-}
-
-void warning_display_low(void)
-{
-    for (idx = 0; idx < 7; idx++) {
-        if (warning_arr[idx] == 2) {
-            switch(idx) {
-                case pH:
-                    lcd_print_stringS(current_r, current_c, "pH");
-                    current_c += 3;
-                    break;
-                case SS:
-                    lcd_print_stringS(current_r, current_c, "SS");
-                    current_c += 3;
-                    break;
-                case COD:
-                    lcd_print_stringS(current_r, current_c, "COD");
-                    current_c += 4;
-                    break;
-                case TMP:
-                    lcd_print_stringS(current_r, current_c, "TMP");
-                    current_c += 4;
-                    break;
-                case NH4:
-                    lcd_print_stringS(current_r, current_c, "NH4");
-                    current_c += 4;
-                    break;
-                case NO3:
-                    lcd_print_stringS(current_r, current_c, "NO3");
-                    current_c += 4;
-                    break;
-                case FLOW:
-                    lcd_print_stringS(current_r, current_c, "FLOW");
-                    current_c += 5;
-                    break;
-                default:
-                    break;
-            }
-            if (current_c > 15) {
-                current_r = 1;
-            }
-            else current_r = 0;
-        }
+    if (current_c > 15) {
+        current_r = 1;
     }
+    else current_r = 0;
 }

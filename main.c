@@ -15,9 +15,6 @@ void send_software(void);
 void main(void)
 {
     init_system();
-//    lcd_print_stringS(0, 0, "Hello");
-//    lcd_display_screen();
-//    delay_ms(1000);
     
     while(1)
     {
@@ -73,16 +70,7 @@ void get_adc(void)
     for (i = 0; i < 7; i++) {
         adcValue[i] = get_adc_value(i);
         delay_ms(20);
-    }
-    
-//    lcd_print_numS(0, 4, adcValue[0]);
-//    lcd_print_numS(0, 8, adcValue[1]);
-//    lcd_print_numS(0, 12, adcValue[2]);
-//    lcd_print_numS(1, 0, adcValue[3]);
-//    lcd_print_numS(1, 4, adcValue[4]);
-//    lcd_print_numS(1, 8, adcValue[5]);
-//    lcd_print_numS(1, 12, adcValue[6]);
-    
+    }    
 }
 
 void get_sensor(void)

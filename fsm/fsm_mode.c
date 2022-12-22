@@ -17,7 +17,7 @@ void fsm_mode_run(void)
             lcd_clearS();
             lcd_print_stringS(0, 0, "WARNING MODE");
             lcd_display_screen();
-            delay_ms(500);
+            delay_ms(1000);
             break;
             
         case DISPLAY_MODE:            
