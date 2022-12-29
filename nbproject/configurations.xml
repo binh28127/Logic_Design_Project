@@ -14,6 +14,7 @@
       <itemPath>button/button.h</itemPath>
       <itemPath>fsm/fsm_display.h</itemPath>
       <itemPath>fsm/fsm_warning.h</itemPath>
+      <itemPath>pwm/pwm.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -32,6 +33,7 @@
       <itemPath>button/button.c</itemPath>
       <itemPath>fsm/fsm_display.c</itemPath>
       <itemPath>fsm/fsm_warning.c</itemPath>
+      <itemPath>pwm/pwm.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

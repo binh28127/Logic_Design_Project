@@ -3,6 +3,7 @@
 #include "../lcd/lcd.h"
 #include "../button/button.h"
 #include "fsm_display.h"
+#include "../pwm/pwm.h"
 
 #define pH          0
 #define SS          1
@@ -32,6 +33,7 @@ void fsm_warning_run(void)
                 mode = WARNING_CONDITION;
             }
             else {
+                pwm_set_speed(0);
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "ALL PARAMETERS  ARE NORMAL");
                 lcd_display_screen();
@@ -47,6 +49,7 @@ void fsm_warning_run(void)
                 current_c = 0;
                 current_r = 0;
             }
+            pwm_set_speed(25);
             if (check_parameters() == 1 || check_parameters() == 3) {
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "HIGH: ");

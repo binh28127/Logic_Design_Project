@@ -19,7 +19,6 @@ void main(void)
     while(1)
     {
         while(!flag_timer3);
-//        lcd_clear();
         flag_timer3 = 0;
         get_adc();
         get_sensor();
@@ -52,6 +51,7 @@ void init_system(void)
 	SetTimer3_ms(50);   //Chu ky thuc hien viec xu ly input,proccess,output
     init_uart();
     init_key_matrix();
+    init_pwm();
     delay_ms(200);
 }
 
