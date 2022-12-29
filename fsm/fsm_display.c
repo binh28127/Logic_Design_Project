@@ -36,6 +36,7 @@ void fsm_display_run(void)
         case DISPLAY_pH:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -46,7 +47,7 @@ void fsm_display_run(void)
                 lcd_print_stringS(0, 0, "SS =   .  mg/L");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_pH_min;
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
@@ -68,6 +69,7 @@ void fsm_display_run(void)
         case DISPLAY_SS:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -78,7 +80,7 @@ void fsm_display_run(void)
                 lcd_print_stringS(0, 0, "COD =    .  mg/L");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_SS_min;
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
@@ -100,6 +102,7 @@ void fsm_display_run(void)
         case DISPLAY_COD:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -110,7 +113,7 @@ void fsm_display_run(void)
                 lcd_print_stringS(0, 0, "TMP =   .  C");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_COD_min;
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
@@ -132,6 +135,7 @@ void fsm_display_run(void)
         case DISPLAY_TMP:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -142,7 +146,7 @@ void fsm_display_run(void)
                 lcd_print_stringS(0, 0, "NH4 =   .  mg/L");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(5)) {
                 mode = SET_TMP_min;
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
@@ -164,6 +168,7 @@ void fsm_display_run(void)
         case DISPLAY_NH4:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -174,7 +179,7 @@ void fsm_display_run(void)
                 lcd_print_stringS(0, 0, "NO3 =   .  mg/L");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_NH4_min;
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
@@ -196,6 +201,7 @@ void fsm_display_run(void)
         case DISPLAY_NO3:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -206,7 +212,7 @@ void fsm_display_run(void)
                 lcd_print_stringS(0, 0, "FLOW =     m3/h");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_NO3_min;
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
@@ -228,6 +234,7 @@ void fsm_display_run(void)
         case DISPLAY_FLOW:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -238,7 +245,7 @@ void fsm_display_run(void)
                 lcd_print_stringS(0, 0, "pH =   .");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_FLOW_min;
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
@@ -267,6 +274,7 @@ void fsm_pH_run(void)
         case SET_pH_min:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -277,7 +285,7 @@ void fsm_pH_run(void)
                 lcd_print_stringS(0, 0, "SS =   .");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_pH_max;
                 lcd_print_stringS(1, 0, "max");
                 lcd_display_screen();
@@ -308,6 +316,7 @@ void fsm_pH_run(void)
         case SET_pH_max:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -318,7 +327,7 @@ void fsm_pH_run(void)
                 lcd_print_stringS(0, 0, "SS =   .  mg/L");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_pH_min;
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
@@ -358,6 +367,7 @@ void fsm_SS_run(void)
         case SET_SS_min:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -368,7 +378,7 @@ void fsm_SS_run(void)
                 lcd_print_stringS(0, 0, "COD =    .  mg/L");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_SS_max;
                 lcd_print_stringS(1, 0, "max");
                 lcd_display_screen();
@@ -399,6 +409,7 @@ void fsm_SS_run(void)
         case SET_SS_max:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -409,7 +420,7 @@ void fsm_SS_run(void)
                 lcd_print_stringS(0, 0, "COD =    .  mg/L");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_SS_min;
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
@@ -449,6 +460,7 @@ void fsm_COD_run(void)
         case SET_COD_min:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -459,7 +471,7 @@ void fsm_COD_run(void)
                 lcd_print_stringS(0, 0, "TMP =   .  C");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_COD_max;
                 lcd_print_stringS(1, 0, "max");
                 lcd_display_screen();
@@ -490,6 +502,7 @@ void fsm_COD_run(void)
         case SET_COD_max:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -500,7 +513,7 @@ void fsm_COD_run(void)
                 lcd_print_stringS(0, 0, "TMP =   .  C");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_COD_min;
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
@@ -540,6 +553,7 @@ void fsm_TMP_run(void)
         case SET_TMP_min:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -550,7 +564,7 @@ void fsm_TMP_run(void)
                 lcd_print_stringS(0, 0, "NH4 =   .  mg/L");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_TMP_max;
                 lcd_print_stringS(1, 0, "max");
                 lcd_display_screen();
@@ -581,6 +595,7 @@ void fsm_TMP_run(void)
         case SET_TMP_max:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -591,7 +606,7 @@ void fsm_TMP_run(void)
                 lcd_print_stringS(0, 0, "NH4 =   .  mg/L");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_TMP_min;
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
@@ -631,6 +646,7 @@ void fsm_NH4_run(void)
         case SET_NH4_min:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -641,7 +657,7 @@ void fsm_NH4_run(void)
                 lcd_print_stringS(0, 0, "NO3 =   .  mg/L");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_NH4_max;
                 lcd_print_stringS(1, 0, "max");
                 lcd_display_screen();
@@ -672,6 +688,7 @@ void fsm_NH4_run(void)
         case SET_NH4_max:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -682,7 +699,7 @@ void fsm_NH4_run(void)
                 lcd_print_stringS(0, 0, "NO3 =   .  mg/L");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_NH4_min;
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
@@ -722,6 +739,7 @@ void fsm_NO3_run(void)
         case SET_NO3_min:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -732,7 +750,7 @@ void fsm_NO3_run(void)
                 lcd_print_stringS(0, 0, "FLOW =     m3/h");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_NO3_max;
                 lcd_print_stringS(1, 0, "max");
                 lcd_display_screen();
@@ -763,6 +781,7 @@ void fsm_NO3_run(void)
         case SET_NO3_max:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -773,7 +792,7 @@ void fsm_NO3_run(void)
                 lcd_print_stringS(0, 0, "FLOW =     m3/h");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_NO3_min;
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
@@ -813,6 +832,7 @@ void fsm_FLOW_run(void)
         case SET_FLOW_min:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -823,7 +843,7 @@ void fsm_FLOW_run(void)
                 lcd_print_stringS(0, 0, "pH =   .");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_FLOW_max;
                 lcd_print_stringS(1, 0, "max");
                 lcd_display_screen();
@@ -853,6 +873,7 @@ void fsm_FLOW_run(void)
         case SET_FLOW_max:
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
@@ -863,7 +884,7 @@ void fsm_FLOW_run(void)
                 lcd_print_stringS(0, 0, "pH =   .");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(BUTTON_3)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_FLOW_min;
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();

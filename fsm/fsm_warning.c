@@ -18,9 +18,11 @@ unsigned int current_r = 0;
 unsigned int current_c = 0;
 unsigned int idx = 0;
 unsigned int delay_count = 0;
+unsigned int buzzer_en = 0;
 
 unsigned int check_parameters(void);
 void warning_display(void);
+void check_buzzer(void);
 
 void fsm_warning_run(void)
 {
@@ -28,12 +30,14 @@ void fsm_warning_run(void)
         case NORMAL_CONDITION:
             if (is_button_pressed(BUTTON_1)) {
                 mode = DISPLAY_MODE;
+                buzzer_en = 0;
+                pwm_set_speed(0);
             }
             if (check_parameters()) {
                 mode = WARNING_CONDITION;
+                buzzer_en = 1;
             }
             else {
-                pwm_set_speed(0);
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "ALL PARAMETERS  ARE NORMAL");
                 lcd_display_screen();
@@ -43,13 +47,20 @@ void fsm_warning_run(void)
         case WARNING_CONDITION:
             if (is_button_pressed(BUTTON_1)) {
                 mode = DISPLAY_MODE;
+                buzzer_en = 0;
+                pwm_set_speed(0);
             }
             if (!check_parameters()) {
                 mode = NORMAL_CONDITION;
                 current_c = 0;
                 current_r = 0;
+                buzzer_en = 0;
+                pwm_set_speed(0);
             }
-            pwm_set_speed(25);
+            check_buzzer();
+            if (buzzer_en) pwm_set_speed(25);
+            else pwm_set_speed(0);
+            
             if (check_parameters() == 1 || check_parameters() == 3) {
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "HIGH: ");
@@ -182,4 +193,11 @@ void warning_display(void)
         current_r = 1;
     }
     else current_r = 0;
+}
+
+void check_buzzer(void)
+{
+    if (is_button_pressed(BUTTON_4)) {
+        buzzer_en = 1 - buzzer_en;
+    }
 }

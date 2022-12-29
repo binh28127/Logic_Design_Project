@@ -8,10 +8,6 @@
 #define	MAX_COL			4
 #define MAX_ROW			4
 
-#define BUTTON_1        0
-#define BUTTON_2        1
-#define BUTTON_3        2
-
 extern unsigned int key_code[16];
 
 void init_key_matrix();

@@ -36,9 +36,10 @@
 
 #define BUTTON_1        0
 #define BUTTON_2        1
-#define BUTTON_3        2
+#define BUTTON_5        5
 #define BUTTON_A        3
 #define BUTTON_B        7
+#define BUTTON_4        4
 
 extern unsigned int mode;
 

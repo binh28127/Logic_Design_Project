@@ -23,6 +23,7 @@ void fsm_mode_run(void)
         case DISPLAY_MODE:            
             if (is_button_pressed(BUTTON_1)) {
                 mode = WARNING_MODE;
+                lcd_clearS();
                 lcd_print_stringS(0, 0, "WARNING MODE");
                 lcd_display_screen();
                 delay_ms(200);
