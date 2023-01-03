@@ -1,7 +1,6 @@
 #include "uart.h"
 #include "../timer/timer.h"
-
-unsigned char dataReceive;
+#include "../fsm/fsm_uart_receive.h"
 
 void init_uart()
 {
@@ -107,5 +106,5 @@ void uart_send_num_percent(long num)
 
 void uart_isr()
 {
-    // FSM??
+    uart_isr_simulate_machine();
 }

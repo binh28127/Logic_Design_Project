@@ -11,4 +11,5 @@ build/default/production/main.o:  \
 	D:/ProjectTKLL/EMS_PIC.X/fsm/fsm_mode.h  \
 	D:/ProjectTKLL/EMS_PIC.X/fsm/fsm_display.h  \
 	D:/ProjectTKLL/EMS_PIC.X/fsm/fsm_warning.h  \
+	D:/ProjectTKLL/EMS_PIC.X/fsm/fsm_uart_receive.h  \
 

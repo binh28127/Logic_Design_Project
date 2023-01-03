@@ -15,6 +15,7 @@
       <itemPath>fsm/fsm_display.h</itemPath>
       <itemPath>fsm/fsm_warning.h</itemPath>
       <itemPath>pwm/pwm.h</itemPath>
+      <itemPath>fsm/fsm_uart_receive.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -34,6 +35,7 @@
       <itemPath>fsm/fsm_display.c</itemPath>
       <itemPath>fsm/fsm_warning.c</itemPath>
       <itemPath>pwm/pwm.c</itemPath>
+      <itemPath>fsm/fsm_uart_receive.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

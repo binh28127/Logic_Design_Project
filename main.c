@@ -11,6 +11,7 @@ void delay_ms(int value);
 void get_adc(void);
 void get_sensor(void);
 void send_software(void);
+void uart_receive_process(void);
 
 void main(void)
 {
@@ -22,7 +23,8 @@ void main(void)
         flag_timer3 = 0;
         get_adc();
         get_sensor();
-        send_software();                  
+        send_software();
+        uart_receive_process();
         scan_key_matrix();
         
         fsm_mode_run();
@@ -50,7 +52,7 @@ void init_system(void)
     init_timer3(46950); //dinh thoi 10ms
 	SetTimer3_ms(50);   //Chu ky thuc hien viec xu ly input,proccess,output
     init_uart();
-    init_key_matrix();
+    init_key_matrix_with_uart();
     init_pwm();
     delay_ms(200);
 }
@@ -111,4 +113,46 @@ void send_software(void)
     uart_send_num_percent(FLOW_value);
     
     uart_send_string(" m3/h \r\n");
+}
+
+void uart_receive_process(void)
+{
+    if(flagOfDataReceiveComplete == 1)
+    {
+        flagOfDataReceiveComplete = 0;
+        if (dataReceive[4] == 0) {
+            switch (dataReceive[0]) {
+                case 0:
+                    pH_value_min = dataReceive[1] * 10;
+                    pH_value_max = dataReceive[2] * 10;
+                    break;
+                case 1:
+                    SS_value_min = dataReceive[1] * 100;
+                    SS_value_max = dataReceive[2] * 100;
+                    break;
+                case 2:
+                    COD_value_min = dataReceive[1] * 100;
+                    COD_value_max = dataReceive[2] * 100;
+                    break;
+                case 3:
+                    TMP_value_min = dataReceive[1] * 100;
+                    TMP_value_max = dataReceive[2] * 100;
+                    break;
+                case 4:
+                    NH4_value_min = dataReceive[1] * 10;
+                    NH4_value_max = dataReceive[2] * 10;
+                    break;
+                case 5:
+                    NO3_value_min = dataReceive[1] * 10;
+                    NO3_value_max = dataReceive[2] * 10;
+                    break;
+                case 6:
+                    FLOW_value_min = dataReceive[1] * 100;
+                    FLOW_value_max = dataReceive[2] * 100;
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
 }

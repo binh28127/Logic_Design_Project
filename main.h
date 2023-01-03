@@ -12,6 +12,7 @@
 #include "fsm/fsm_display.h"
 #include "fsm/fsm_warning.h"
 #include "pwm/pwm.h"
+#include "fsm/fsm_uart_receive.h"
 
 #pragma config OSC		= HS
 #pragma config FCMEN            = OFF

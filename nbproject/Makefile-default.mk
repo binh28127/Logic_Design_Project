@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=main.c adc/adc.c uart/uart.c timer/timer.c lcd/lcd.c interrupt/interrupt.c fsm/fsm_mode.c button/button.c fsm/fsm_display.c fsm/fsm_warning.c pwm/pwm.c
+SOURCEFILES_QUOTED_IF_SPACED=main.c adc/adc.c uart/uart.c timer/timer.c lcd/lcd.c interrupt/interrupt.c fsm/fsm_mode.c button/button.c fsm/fsm_display.c fsm/fsm_warning.c pwm/pwm.c fsm/fsm_uart_receive.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/adc/adc.o ${OBJECTDIR}/uart/uart.o ${OBJECTDIR}/timer/timer.o ${OBJECTDIR}/lcd/lcd.o ${OBJECTDIR}/interrupt/interrupt.o ${OBJECTDIR}/fsm/fsm_mode.o ${OBJECTDIR}/button/button.o ${OBJECTDIR}/fsm/fsm_display.o ${OBJECTDIR}/fsm/fsm_warning.o ${OBJECTDIR}/pwm/pwm.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/adc/adc.o.d ${OBJECTDIR}/uart/uart.o.d ${OBJECTDIR}/timer/timer.o.d ${OBJECTDIR}/lcd/lcd.o.d ${OBJECTDIR}/interrupt/interrupt.o.d ${OBJECTDIR}/fsm/fsm_mode.o.d ${OBJECTDIR}/button/button.o.d ${OBJECTDIR}/fsm/fsm_display.o.d ${OBJECTDIR}/fsm/fsm_warning.o.d ${OBJECTDIR}/pwm/pwm.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/adc/adc.o ${OBJECTDIR}/uart/uart.o ${OBJECTDIR}/timer/timer.o ${OBJECTDIR}/lcd/lcd.o ${OBJECTDIR}/interrupt/interrupt.o ${OBJECTDIR}/fsm/fsm_mode.o ${OBJECTDIR}/button/button.o ${OBJECTDIR}/fsm/fsm_display.o ${OBJECTDIR}/fsm/fsm_warning.o ${OBJECTDIR}/pwm/pwm.o ${OBJECTDIR}/fsm/fsm_uart_receive.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/adc/adc.o.d ${OBJECTDIR}/uart/uart.o.d ${OBJECTDIR}/timer/timer.o.d ${OBJECTDIR}/lcd/lcd.o.d ${OBJECTDIR}/interrupt/interrupt.o.d ${OBJECTDIR}/fsm/fsm_mode.o.d ${OBJECTDIR}/button/button.o.d ${OBJECTDIR}/fsm/fsm_display.o.d ${OBJECTDIR}/fsm/fsm_warning.o.d ${OBJECTDIR}/pwm/pwm.o.d ${OBJECTDIR}/fsm/fsm_uart_receive.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/adc/adc.o ${OBJECTDIR}/uart/uart.o ${OBJECTDIR}/timer/timer.o ${OBJECTDIR}/lcd/lcd.o ${OBJECTDIR}/interrupt/interrupt.o ${OBJECTDIR}/fsm/fsm_mode.o ${OBJECTDIR}/button/button.o ${OBJECTDIR}/fsm/fsm_display.o ${OBJECTDIR}/fsm/fsm_warning.o ${OBJECTDIR}/pwm/pwm.o
+OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/adc/adc.o ${OBJECTDIR}/uart/uart.o ${OBJECTDIR}/timer/timer.o ${OBJECTDIR}/lcd/lcd.o ${OBJECTDIR}/interrupt/interrupt.o ${OBJECTDIR}/fsm/fsm_mode.o ${OBJECTDIR}/button/button.o ${OBJECTDIR}/fsm/fsm_display.o ${OBJECTDIR}/fsm/fsm_warning.o ${OBJECTDIR}/pwm/pwm.o ${OBJECTDIR}/fsm/fsm_uart_receive.o
 
 # Source Files
-SOURCEFILES=main.c adc/adc.c uart/uart.c timer/timer.c lcd/lcd.c interrupt/interrupt.c fsm/fsm_mode.c button/button.c fsm/fsm_display.c fsm/fsm_warning.c pwm/pwm.c
+SOURCEFILES=main.c adc/adc.c uart/uart.c timer/timer.c lcd/lcd.c interrupt/interrupt.c fsm/fsm_mode.c button/button.c fsm/fsm_display.c fsm/fsm_warning.c pwm/pwm.c fsm/fsm_uart_receive.c
 
 
 
@@ -190,6 +190,14 @@ ${OBJECTDIR}/pwm/pwm.o: pwm/pwm.c  nbproject/Makefile-${CND_CONF}.mk
 	@${DEP_GEN} -d ${OBJECTDIR}/pwm/pwm.o 
 	@${FIXDEPS} "${OBJECTDIR}/pwm/pwm.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
+${OBJECTDIR}/fsm/fsm_uart_receive.o: fsm/fsm_uart_receive.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/fsm" 
+	@${RM} ${OBJECTDIR}/fsm/fsm_uart_receive.o.d 
+	@${RM} ${OBJECTDIR}/fsm/fsm_uart_receive.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/fsm/fsm_uart_receive.o   fsm/fsm_uart_receive.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/fsm/fsm_uart_receive.o 
+	@${FIXDEPS} "${OBJECTDIR}/fsm/fsm_uart_receive.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
 else
 ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
@@ -278,6 +286,14 @@ ${OBJECTDIR}/pwm/pwm.o: pwm/pwm.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/pwm/pwm.o   pwm/pwm.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/pwm/pwm.o 
 	@${FIXDEPS} "${OBJECTDIR}/pwm/pwm.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/fsm/fsm_uart_receive.o: fsm/fsm_uart_receive.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/fsm" 
+	@${RM} ${OBJECTDIR}/fsm/fsm_uart_receive.o.d 
+	@${RM} ${OBJECTDIR}/fsm/fsm_uart_receive.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/fsm/fsm_uart_receive.o   fsm/fsm_uart_receive.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/fsm/fsm_uart_receive.o 
+	@${FIXDEPS} "${OBJECTDIR}/fsm/fsm_uart_receive.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 endif
 

@@ -22,6 +22,9 @@ void init_key_matrix_with_uart()
 {
     TRIS_BUTTON = TRIS_BUTTON & 0xcf; //RC5 & RC4 Output
 	PORT_BUTTON = 0xff;
+//    TRIS_BUTTON = TRIS_BUTTON | 0x07;
+//    TRIS_BUTTON = TRIS_BUTTON & 0b11011111; //RC5 Output
+//	PORT_BUTTON = 0xff;
 }
 
 void scan_key_matrix()

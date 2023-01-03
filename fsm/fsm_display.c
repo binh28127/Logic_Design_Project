@@ -2,6 +2,7 @@
 #include "fsm_mode.h"
 #include "../button/button.h"
 #include "../lcd/lcd.h"
+#include "../fsm/fsm_uart_receive.h"
 
 unsigned int pH_value = 750;
 unsigned int SS_value = 3500;
@@ -45,6 +46,7 @@ void fsm_display_run(void)
                 mode = DISPLAY_SS;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "SS =   .  mg/L");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -78,6 +80,7 @@ void fsm_display_run(void)
                 mode = DISPLAY_COD;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "COD =    .  mg/L");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -111,6 +114,7 @@ void fsm_display_run(void)
                 mode = DISPLAY_TMP;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "TMP =   .  C");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -144,6 +148,7 @@ void fsm_display_run(void)
                 mode = DISPLAY_NH4;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "NH4 =   .  mg/L");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(5)) {
@@ -177,6 +182,7 @@ void fsm_display_run(void)
                 mode = DISPLAY_NO3;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "NO3 =   .  mg/L");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -210,6 +216,7 @@ void fsm_display_run(void)
                 mode = DISPLAY_FLOW;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "FLOW =     m3/h");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -243,6 +250,7 @@ void fsm_display_run(void)
                 mode = DISPLAY_pH;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "pH =   .");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -283,6 +291,7 @@ void fsm_pH_run(void)
                 mode = DISPLAY_SS;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "SS =   .");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -325,6 +334,7 @@ void fsm_pH_run(void)
                 mode = DISPLAY_SS;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "SS =   .  mg/L");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -376,6 +386,7 @@ void fsm_SS_run(void)
                 mode = DISPLAY_COD;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "COD =    .  mg/L");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -418,6 +429,7 @@ void fsm_SS_run(void)
                 mode = DISPLAY_COD;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "COD =    .  mg/L");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -469,6 +481,7 @@ void fsm_COD_run(void)
                 mode = DISPLAY_TMP;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "TMP =   .  C");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -511,6 +524,7 @@ void fsm_COD_run(void)
                 mode = DISPLAY_TMP;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "TMP =   .  C");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -562,6 +576,7 @@ void fsm_TMP_run(void)
                 mode = DISPLAY_NH4;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "NH4 =   .  mg/L");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -604,6 +619,7 @@ void fsm_TMP_run(void)
                 mode = DISPLAY_NH4;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "NH4 =   .  mg/L");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -655,6 +671,7 @@ void fsm_NH4_run(void)
                 mode = DISPLAY_NO3;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "NO3 =   .  mg/L");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -697,6 +714,7 @@ void fsm_NH4_run(void)
                 mode = DISPLAY_NO3;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "NO3 =   .  mg/L");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -748,6 +766,7 @@ void fsm_NO3_run(void)
                 mode = DISPLAY_FLOW;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "FLOW =     m3/h");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -790,6 +809,7 @@ void fsm_NO3_run(void)
                 mode = DISPLAY_FLOW;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "FLOW =     m3/h");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -841,6 +861,7 @@ void fsm_FLOW_run(void)
                 mode = DISPLAY_pH;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "pH =   .");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {
@@ -882,6 +903,7 @@ void fsm_FLOW_run(void)
                 mode = DISPLAY_pH;
                 lcd_clearS();
                 lcd_print_stringS(0, 0, "pH =   .");
+                uart_display();
                 lcd_display_screen();
             }
             else if (is_button_pressed(BUTTON_5)) {

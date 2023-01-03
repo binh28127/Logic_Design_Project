@@ -1,4 +1,6 @@
 #include "interrupt.h"
+#include "../timer/timer.h"
+#include "../uart/uart.h"
 
 unsigned int cnt0 = 0, cnt1 = 0;
 
@@ -54,7 +56,13 @@ void low_isr(void)
 		timer1_isr();
 	}
 
-	
+	if (PIR1bits.TMR2IF) // timer2
+	{
+		stop_timer2();
+		PIR1bits.TMR2IF = 0;
+		start_timer2();
+		timer2_isr();
+	}	
 
 	if (PIR2bits.TMR3IF) // timer3
 	{
@@ -73,7 +81,7 @@ void low_isr(void)
         if(PIR1bits.RCIF == 1) // UART interupt Receive
 	{
 		PIR1bits.RCIF = 0;
-
+        uart_isr();
 	}
 }
 
@@ -97,7 +105,13 @@ void high_isr(void)
 		timer1_isr();
 	}
 
-	
+	if (PIR1bits.TMR2IF) // timer2
+	{
+		stop_timer2();
+		PIR1bits.TMR2IF = 0;
+		start_timer2();
+		timer2_isr();
+	}	
 
 	if (PIR2bits.TMR3IF) // timer3
 	{
@@ -116,7 +130,7 @@ void high_isr(void)
         if(PIR1bits.RCIF == 1) // UART interupt Receive
 	{
 		PIR1bits.RCIF = 0;
-
+        uart_isr();
 	}
 
         //if(PIR1bits.TXIF == 1) // UART interupt Receive
