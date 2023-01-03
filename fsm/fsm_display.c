@@ -55,11 +55,12 @@ void fsm_display_run(void)
                 lcd_display_screen();
             }
             else {
+                lcd_print_stringS(0, 5, "  .  ");
+                
                 if (pH_value > 999) {
                     lcd_print_numS(0, 5, pH_value / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 5, " ");
                     lcd_print_numS(0, 6, pH_value / 100);
                 }
                 lcd_print_numS(0, 8, pH_value % 100);
@@ -89,11 +90,12 @@ void fsm_display_run(void)
                 lcd_display_screen();
             }
             else {
+                lcd_print_stringS(0, 5, "  .  ");
+                
                 if (SS_value > 999) {
                     lcd_print_numS(0, 5, SS_value / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 5, " ");
                     lcd_print_numS(0, 6, SS_value / 100);
                 }
                 lcd_print_numS(0, 8, SS_value % 100);
@@ -123,11 +125,12 @@ void fsm_display_run(void)
                 lcd_display_screen();
             }
             else {
+                lcd_print_stringS(0, 6, "   .  ");
+                
                 if (COD_value > 9999) {
                     lcd_print_numS(0, 6, COD_value / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 6, " ");
                     lcd_print_numS(0, 7, COD_value / 100);
                 }
                 lcd_print_numS(0, 10, COD_value % 100);
@@ -157,11 +160,12 @@ void fsm_display_run(void)
                 lcd_display_screen();
             }
             else {
+                lcd_print_stringS(0, 6, "  .  ");
+                
                 if (TMP_value > 999) {
                     lcd_print_numS(0, 6, TMP_value / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 6, " ");
                     lcd_print_numS(0, 7, TMP_value / 100);
                 }
                 lcd_print_numS(0, 9, TMP_value % 100);
@@ -191,11 +195,12 @@ void fsm_display_run(void)
                 lcd_display_screen();
             }
             else {
+                lcd_print_stringS(0, 6, "  .  ");
+                
                 if (NH4_value > 999) {
                     lcd_print_numS(0, 6, NH4_value / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 6, " ");
                     lcd_print_numS(0, 7, NH4_value / 100);
                 }
                 lcd_print_numS(0, 9, NH4_value % 100);
@@ -215,7 +220,7 @@ void fsm_display_run(void)
             else if (is_button_pressed(BUTTON_2)) {
                 mode = DISPLAY_FLOW;
                 lcd_clearS();
-                lcd_print_stringS(0, 0, "FLOW =     m3/h");
+                lcd_print_stringS(0, 0, "FLOW =    m3/h");
                 uart_display();
                 lcd_display_screen();
             }
@@ -225,11 +230,12 @@ void fsm_display_run(void)
                 lcd_display_screen();
             }
             else {
+                lcd_print_stringS(0, 6, "  .  ");
+                
                 if (NO3_value > 999) {
                     lcd_print_numS(0, 6, NO3_value / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 6, " ");
                     lcd_print_numS(0, 7, NO3_value / 100);
                 }
                 lcd_print_numS(0, 9, NO3_value % 100);
@@ -259,11 +265,12 @@ void fsm_display_run(void)
                 lcd_display_screen();
             }
             else {
+                lcd_print_stringS(0, 7, "   ");
+                
                 if (FLOW_value > 9999) {
                     lcd_print_numS(0, 7, FLOW_value / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 7, " ");
                     lcd_print_numS(0, 8, FLOW_value / 100);
                 }
                 lcd_display_screen();
@@ -310,11 +317,12 @@ void fsm_pH_run(void)
                 }
             }
             else {
+                lcd_print_stringS(0, 5, "  .  ");
+                
                 if (pH_value_min > 999) {
                     lcd_print_numS(0, 5, pH_value_min / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 5, " ");
                     lcd_print_numS(0, 6, pH_value_min / 100);
                 }
                 lcd_print_numS(0, 8, pH_value_min % 100);
@@ -353,11 +361,12 @@ void fsm_pH_run(void)
                 }
             }
             else {
+                lcd_print_stringS(0, 5, "  .  ");
+                
                 if (pH_value_max > 999) {
                     lcd_print_numS(0, 5, pH_value_max / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 5, " ");
                     lcd_print_numS(0, 6, pH_value_max / 100);
                 }
                 lcd_print_numS(0, 8, pH_value_max % 100);
@@ -405,11 +414,12 @@ void fsm_SS_run(void)
                 }
             }
             else {
+                lcd_print_stringS(0, 5, "  .  ");
+                
                 if (SS_value_min > 999) {
                     lcd_print_numS(0, 5, SS_value_min / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 5, " ");
                     lcd_print_numS(0, 6, SS_value_min / 100);
                 }
                 lcd_print_numS(0, 8, SS_value_min % 100);
@@ -448,11 +458,12 @@ void fsm_SS_run(void)
                 }
             }
             else {
+                lcd_print_stringS(0, 5, "  .  ");
+                
                 if (SS_value_max > 999) {
                     lcd_print_numS(0, 5, SS_value_max / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 5, " ");
                     lcd_print_numS(0, 6, SS_value_max / 100);
                 }
                 lcd_print_numS(0, 8, SS_value_max % 100);
@@ -500,11 +511,12 @@ void fsm_COD_run(void)
                 }
             }
             else {
+                lcd_print_stringS(0, 6, "   .  ");
+                
                 if (COD_value_min > 9999) {
                     lcd_print_numS(0, 6, COD_value_min / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 6, " ");
                     lcd_print_numS(0, 7, COD_value_min / 100);
                 }
                 lcd_print_numS(0, 10, COD_value_min % 100);
@@ -543,11 +555,12 @@ void fsm_COD_run(void)
                 }
             }
             else {
+                lcd_print_stringS(0, 6, "   .  ");
+                
                 if (COD_value_max > 9999) {
                     lcd_print_numS(0, 6, COD_value_max / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 6, " ");
                     lcd_print_numS(0, 7, COD_value_max / 100);
                 }
                 lcd_print_numS(0, 10, COD_value_max % 100);
@@ -595,11 +608,12 @@ void fsm_TMP_run(void)
                 }
             }
             else {
+                lcd_print_stringS(0, 6, "  .  ");
+                
                 if (TMP_value_min > 999) {
                     lcd_print_numS(0, 6, TMP_value_min / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 6, " ");
                     lcd_print_numS(0, 7, TMP_value_min / 100);
                 }
                 lcd_print_numS(0, 9, TMP_value_min % 100);
@@ -638,11 +652,12 @@ void fsm_TMP_run(void)
                 }
             }
             else {
+                lcd_print_stringS(0, 6, "  .  ");
+                
                 if (TMP_value_min > 999) {
                     lcd_print_numS(0, 6, TMP_value_max / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 6, " ");
                     lcd_print_numS(0, 7, TMP_value_max / 100);
                 }
                 lcd_print_numS(0, 9, TMP_value_max % 100);
@@ -690,11 +705,12 @@ void fsm_NH4_run(void)
                 }
             }
             else {
+                lcd_print_stringS(0, 6, "  .  ");
+                
                 if (NH4_value_min > 999) {
                     lcd_print_numS(0, 6, NH4_value_min / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 6, " ");
                     lcd_print_numS(0, 7, NH4_value_min / 100);
                 }
                 lcd_print_numS(0, 9, NH4_value_min % 100);
@@ -733,11 +749,12 @@ void fsm_NH4_run(void)
                 }
             }
             else {
+                lcd_print_stringS(0, 6, "  .  ");
+                
                 if (NH4_value_max > 999) {
                     lcd_print_numS(0, 6, NH4_value_max / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 6, " ");
                     lcd_print_numS(0, 7, NH4_value_max / 100);
                 }
                 lcd_print_numS(0, 9, NH4_value_max % 100);
@@ -785,11 +802,12 @@ void fsm_NO3_run(void)
                 }
             }
             else {
+                lcd_print_stringS(0, 6, "  .  ");
+                
                 if (NO3_value_min > 999) {
                     lcd_print_numS(0, 6, NO3_value_min / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 6, " ");
                     lcd_print_numS(0, 7, NO3_value_min / 100);
                 }
                 lcd_print_numS(0, 9, NO3_value_min % 100);
@@ -828,11 +846,12 @@ void fsm_NO3_run(void)
                 }
             }
             else {
+                lcd_print_stringS(0, 6, "  .  ");
+                
                 if (NO3_value_max > 999) {
                     lcd_print_numS(0, 6, NO3_value_max / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 6, " ");
                     lcd_print_numS(0, 7, NO3_value_max / 100);
                 }
                 lcd_print_numS(0, 9, NO3_value_max % 100);
@@ -880,11 +899,12 @@ void fsm_FLOW_run(void)
                 }
             }
             else {
+                lcd_print_stringS(0, 7, "   ");
+                
                 if (FLOW_value_min > 9999) {
                     lcd_print_numS(0, 7, FLOW_value_min / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 7, " ");
                     lcd_print_numS(0, 8, FLOW_value_min / 100);
                 }
                 lcd_display_screen();
@@ -922,11 +942,12 @@ void fsm_FLOW_run(void)
                 }
             }
             else {
+                lcd_print_stringS(0, 7, "   ");
+                
                 if (FLOW_value_max > 9999) {
                     lcd_print_numS(0, 7, FLOW_value_max / 100);
                 }
                 else {
-                    lcd_print_stringS(0, 7, " ");
                     lcd_print_numS(0, 8, FLOW_value_max / 100);
                 }
                 lcd_display_screen();
