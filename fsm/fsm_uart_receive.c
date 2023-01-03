@@ -9,15 +9,15 @@
 #define END_OF_RECEIVE_1	4
 #define END_OF_RECEIVE_2	5
 
-unsigned char statusReceive = INIT_RECEIVE;
-unsigned char flagOfDataReceiveComplete = 0;
-unsigned char indexOfDataReceive = 0;
-unsigned char numberOfDataReceive = 5;
-unsigned char dataReceive[50];
+unsigned int statusReceive = INIT_RECEIVE;
+unsigned int flagOfDataReceiveComplete = 0;
+unsigned int indexOfDataReceive = 0;
+unsigned int numberOfDataReceive = 5;
+unsigned int dataReceive[50];
 
 void uart_isr_simulate_machine(void)
 {
-    unsigned char tempReceive;
+    unsigned int tempReceive;
     tempReceive = RCREG;
     uart_putchar(tempReceive);
     switch(statusReceive)
@@ -66,7 +66,7 @@ void uart_isr_simulate_machine(void)
 
 void uart_display(void)
 {
-    unsigned char i;
+    unsigned int i;
     
     if(flagOfDataReceiveComplete == 1)
     {
