@@ -19,7 +19,9 @@ unsigned int current_c = 0;
 unsigned int idx = 0;
 unsigned int delay_count = 0;
 unsigned int buzzer_en = 0;
+unsigned int i = 0;
 
+void display_normal(void);
 unsigned int check_parameters(void);
 void warning_display(void);
 void check_buzzer(void);
@@ -32,14 +34,16 @@ void fsm_warning_run(void)
                 mode = DISPLAY_MODE;
                 buzzer_en = 0;
                 pwm_set_speed(0);
+                i = 0;
             }
             if (check_parameters()) {
                 mode = WARNING_CONDITION;
                 buzzer_en = 1;
+//                i = 0;
             }
             else {
                 lcd_clearS();
-                lcd_print_stringS(0, 0, "ALL PARAMETERS  ARE NORMAL");
+                display_normal();
                 lcd_display_screen();
             }
             break;
@@ -104,6 +108,198 @@ void fsm_warning_run(void)
         default:
             break;
     }
+}
+
+void display_normal(void)
+{
+    if (i < 10) {
+        i++;
+        lcd_print_stringS(0, 0, "ALL PARAMETERS  ARE NORMAL");
+    }
+    else if (i < 15) {
+        i++;
+        
+        // Display pH value
+        lcd_print_stringS(1, 0, "pH =   .");
+        
+        if (pH_value > 999) {
+            lcd_print_numS(1, 5, pH_value / 100);
+        }
+        else {
+            lcd_print_numS(1, 6, pH_value / 100);
+        }
+        lcd_print_numS(1, 8, pH_value % 100);
+    }
+    else if (i < 20) {
+        i++;
+        
+        // Display pH value
+        lcd_print_stringS(0, 0, "pH =   .");
+        
+        if (pH_value > 999) {
+            lcd_print_numS(0, 5, pH_value / 100);
+        }
+        else {
+            lcd_print_numS(0, 6, pH_value / 100);
+        }
+        lcd_print_numS(0, 8, pH_value % 100);
+        
+        // Display SS value
+        lcd_print_stringS(1, 0, "SS =   .  mg/L");
+
+        if (SS_value > 999) {
+            lcd_print_numS(1, 5, SS_value / 100);
+        }
+        else {
+            lcd_print_numS(1, 6, SS_value / 100);
+        }
+        lcd_print_numS(1, 8, SS_value % 100);
+        
+    }
+    else if (i < 25) {
+        i++;
+        
+        // Display SS value
+        lcd_print_stringS(0, 0, "SS =   .  mg/L");
+
+        if (SS_value > 999) {
+            lcd_print_numS(0, 5, SS_value / 100);
+        }
+        else {
+            lcd_print_numS(0, 6, SS_value / 100);
+        }
+        lcd_print_numS(0, 8, SS_value % 100);
+        
+        // Display COD value
+        lcd_print_stringS(1, 0, "COD =    .  mg/L");
+        
+        if (COD_value > 9999) {
+            lcd_print_numS(1, 6, COD_value / 100);
+        }
+        else {
+            lcd_print_numS(1, 7, COD_value / 100);
+        }
+        lcd_print_numS(1, 10, COD_value % 100);
+        
+    }
+    else if (i < 30) {
+        i++;
+        
+        // Display COD value
+        lcd_print_stringS(0, 0, "COD =    .  mg/L");
+        
+        if (COD_value > 9999) {
+            lcd_print_numS(0, 6, COD_value / 100);
+        }
+        else {
+            lcd_print_numS(0, 7, COD_value / 100);
+        }
+        lcd_print_numS(0, 10, COD_value % 100);
+        
+        // Display TMP value
+        lcd_print_stringS(1, 0, "TMP =   .  C");
+
+        if (TMP_value > 999) {
+            lcd_print_numS(1, 6, TMP_value / 100);
+        }
+        else {
+            lcd_print_numS(1, 7, TMP_value / 100);
+        }
+        lcd_print_numS(1, 9, TMP_value % 100);
+        
+    }
+    else if (i < 35) {
+        i++;
+        
+        // Display TMP value
+        lcd_print_stringS(0, 0, "TMP =   .  C");
+
+        if (TMP_value > 999) {
+            lcd_print_numS(0, 6, TMP_value / 100);
+        }
+        else {
+            lcd_print_numS(0, 7, TMP_value / 100);
+        }
+        lcd_print_numS(0, 9, TMP_value % 100);
+        
+        // Display NH4 value
+        lcd_print_stringS(1, 0, "NH4 =   .  mg/L");
+
+        if (NH4_value > 999) {
+            lcd_print_numS(1, 6, NH4_value / 100);
+        }
+        else {
+            lcd_print_numS(1, 7, NH4_value / 100);
+        }
+        lcd_print_numS(1, 9, NH4_value % 100);
+        
+    }
+    else if (i < 40) {
+        i++;
+        
+        // Display NH4 value
+        lcd_print_stringS(0, 0, "NH4 =   .  mg/L");
+
+        if (NH4_value > 999) {
+            lcd_print_numS(0, 6, NH4_value / 100);
+        }
+        else {
+            lcd_print_numS(0, 7, NH4_value / 100);
+        }
+        lcd_print_numS(0, 9, NH4_value % 100);
+        
+        // Display NO3 value
+        lcd_print_stringS(1, 0, "NO3 =   .  mg/L");
+
+        if (NH4_value > 999) {
+            lcd_print_numS(1, 6, NO3_value / 100);
+        }
+        else {
+            lcd_print_numS(1, 7, NO3_value / 100);
+        }
+        lcd_print_numS(1, 9, NO3_value % 100);
+        
+    }    
+    else if (i < 45) {
+        i++;
+        
+        // Display NO3 value
+        lcd_print_stringS(0, 0, "NO3 =   .  mg/L");
+
+        if (NH4_value > 999) {
+            lcd_print_numS(0, 6, NO3_value / 100);
+        }
+        else {
+            lcd_print_numS(0, 7, NO3_value / 100);
+        }
+        lcd_print_numS(0, 9, NO3_value % 100);
+        
+        // Display FLOW value
+        lcd_print_stringS(1, 0, "FLOW =    m3/h");
+
+        if (FLOW_value > 9999) {
+            lcd_print_numS(1, 7, FLOW_value / 100);
+        }
+        else {
+            lcd_print_numS(1, 8, FLOW_value / 100);
+        }
+        
+    }
+    else if (i < 50) {
+        i++;
+        
+        // Display FLOW value
+        lcd_print_stringS(0, 0, "FLOW =    m3/h");
+
+        if (FLOW_value > 9999) {
+            lcd_print_numS(0, 7, FLOW_value / 100);
+        }
+        else {
+            lcd_print_numS(0, 8, FLOW_value / 100);
+        }
+    }
+    
+    else i = 0;
 }
 
 unsigned int check_parameters(void)

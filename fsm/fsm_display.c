@@ -50,6 +50,12 @@ void fsm_display_run(void)
             }
             else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_pH_min;
+                lcd_clearS();
+                lcd_print_stringS(0, 0, "SET pH");
+                lcd_display_screen();
+                delay_ms(1000);
+                lcd_clearS();
+                lcd_print_stringS(0, 0, "pH =   .");
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
             }
@@ -84,6 +90,12 @@ void fsm_display_run(void)
             }
             else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_SS_min;
+                lcd_clearS();
+                lcd_print_stringS(0, 0, "SET SS");
+                lcd_display_screen();
+                delay_ms(1000);
+                lcd_clearS();
+                lcd_print_stringS(0, 0, "SS =   .  mg/L");
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
             }
@@ -118,6 +130,12 @@ void fsm_display_run(void)
             }
             else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_COD_min;
+                lcd_clearS();
+                lcd_print_stringS(0, 0, "SET COD");
+                lcd_display_screen();
+                delay_ms(1000);
+                lcd_clearS();
+                lcd_print_stringS(0, 0, "COD =    .  mg/L");
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
             }
@@ -150,8 +168,14 @@ void fsm_display_run(void)
                 lcd_print_stringS(0, 0, "NH4 =   .  mg/L");
                 lcd_display_screen();
             }
-            else if (is_button_pressed(5)) {
+            else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_TMP_min;
+                lcd_clearS();
+                lcd_print_stringS(0, 0, "SET TMP");
+                lcd_display_screen();
+                delay_ms(1000);
+                lcd_clearS();
+                lcd_print_stringS(0, 0, "TMP =   .  C");
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
             }
@@ -186,6 +210,12 @@ void fsm_display_run(void)
             }
             else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_NH4_min;
+                lcd_clearS();
+                lcd_print_stringS(0, 0, "SET NH4");
+                lcd_display_screen();
+                delay_ms(1000);
+                lcd_clearS();
+                lcd_print_stringS(0, 0, "NH4 =   .  mg/L");
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
             }
@@ -220,6 +250,12 @@ void fsm_display_run(void)
             }
             else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_NO3_min;
+                lcd_clearS();
+                lcd_print_stringS(0, 0, "SET NO3");
+                lcd_display_screen();
+                delay_ms(1000);
+                lcd_clearS();
+                lcd_print_stringS(0, 0, "NO3 =   .  mg/L");
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
             }
@@ -254,6 +290,12 @@ void fsm_display_run(void)
             }
             else if (is_button_pressed(BUTTON_5)) {
                 mode = SET_FLOW_min;
+                lcd_clearS();
+                lcd_print_stringS(0, 0, "SET FLOW");
+                lcd_display_screen();
+                delay_ms(1000);
+                lcd_clearS();
+                lcd_print_stringS(0, 0, "FLOW =    m3/h");
                 lcd_print_stringS(1, 0, "min");
                 lcd_display_screen();
             }
