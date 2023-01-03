@@ -12,7 +12,7 @@
 unsigned int statusReceive = INIT_RECEIVE;
 unsigned int flagOfDataReceiveComplete = 0;
 unsigned int indexOfDataReceive = 0;
-unsigned int numberOfDataReceive = 5;
+unsigned int numberOfDataReceive = 3;
 unsigned int dataReceive[50];
 
 void uart_isr_simulate_machine(void)

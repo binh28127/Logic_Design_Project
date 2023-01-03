@@ -120,39 +120,37 @@ void uart_receive_process(void)
     if(flagOfDataReceiveComplete == 1)
     {
         flagOfDataReceiveComplete = 0;
-        if (dataReceive[4] == 0) {
-            switch (dataReceive[0]) {
-                case 0:
-                    pH_value_min = dataReceive[1] * 10;
-                    pH_value_max = dataReceive[2] * 10;
-                    break;
-                case 1:
-                    SS_value_min = dataReceive[1] * 100;
-                    SS_value_max = dataReceive[2] * 100;
-                    break;
-                case 2:
-                    COD_value_min = dataReceive[1] * 100;
-                    COD_value_max = dataReceive[2] * 100;
-                    break;
-                case 3:
-                    TMP_value_min = dataReceive[1] * 100;
-                    TMP_value_max = dataReceive[2] * 100;
-                    break;
-                case 4:
-                    NH4_value_min = dataReceive[1] * 10;
-                    NH4_value_max = dataReceive[2] * 10;
-                    break;
-                case 5:
-                    NO3_value_min = dataReceive[1] * 10;
-                    NO3_value_max = dataReceive[2] * 10;
-                    break;
-                case 6:
-                    FLOW_value_min = dataReceive[1] * 100;
-                    FLOW_value_max = dataReceive[2] * 100;
-                    break;
-                default:
-                    break;
-            }
+        switch (dataReceive[0]) {
+            case 0:
+                pH_value_min = dataReceive[1] * 10;
+                pH_value_max = dataReceive[2] * 10;
+                break;
+            case 1:
+                SS_value_min = dataReceive[1] * 100;
+                SS_value_max = dataReceive[2] * 100;
+                break;
+            case 2:
+                COD_value_min = dataReceive[1] * 100;
+                COD_value_max = dataReceive[2] * 100;
+                break;
+            case 3:
+                TMP_value_min = dataReceive[1] * 100;
+                TMP_value_max = dataReceive[2] * 100;
+                break;
+            case 4:
+                NH4_value_min = dataReceive[1] * 10;
+                NH4_value_max = dataReceive[2] * 10;
+                break;
+            case 5:
+                NO3_value_min = dataReceive[1] * 10;
+                NO3_value_max = dataReceive[2] * 10;
+                break;
+            case 6:
+                FLOW_value_min = dataReceive[1] * 100;
+                FLOW_value_max = dataReceive[2] * 100;
+                break;
+            default:
+                break;
         }
     }
 }
